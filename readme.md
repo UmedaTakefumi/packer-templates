@@ -14,3 +14,11 @@ packer build template.json
 vagrant box add centos-6-8-x64 centos-6-8-x64-virtualbox.box
 ```
 
+### vagrant 起動
+
+```
+vagrant init centos-6-8-x64
+vagrant up
+vagrant ssh
+```
+
