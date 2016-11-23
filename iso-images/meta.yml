@@ -1,0 +1,36 @@
+---
+CentOS-6.8-x86_64-all:
+  iso:
+    riken:
+      - http://ftp.riken.jp/Linux/centos/6.8/isos/x86_64/CentOS-6.8-x86_64-LiveCD.iso
+      - http://ftp.riken.jp/Linux/centos/6.8/isos/x86_64/CentOS-6.8-x86_64-LiveDVD.iso
+      - http://ftp.riken.jp/Linux/centos/6.8/isos/x86_64/CentOS-6.8-x86_64-bin-DVD1.iso
+      - http://ftp.riken.jp/Linux/centos/6.8/isos/x86_64/CentOS-6.8-x86_64-bin-DVD2.iso
+      - http://ftp.riken.jp/Linux/centos/6.8/isos/x86_64/CentOS-6.8-x86_64-minimal.iso
+      - http://ftp.riken.jp/Linux/centos/6.8/isos/x86_64/CentOS-6.8-x86_64-netinstall.iso
+  checksum:
+    riken:
+      md5:
+        - http://ftp.riken.jp/Linux/centos/6.8/isos/x86_64/md5sum.txt
+      sha1:
+        - http://ftp.riken.jp/Linux/centos/6.8/isos/x86_64/sha1sum.txt
+      sha256:
+        - http://ftp.riken.jp/Linux/centos/6.8/isos/x86_64/sha256sum.txt
+---
+ubuntu-16.04.1-server-amd64:
+  iso:
+    riken:
+      - http://ftp.riken.jp/Linux/ubuntu-releases/16.04/ubuntu-16.04.1-server-amd64.iso
+
+
+
+
+
+
+
+
+
+
+
+
+
