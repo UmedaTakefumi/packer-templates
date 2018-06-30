@@ -33,7 +33,7 @@
         "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter><wait>"
       ],
       "boot_wait": "10s",
-      "disk_size": 40520,
+      "disk_size": 50000,
       "guest_os_type": "RedHat_64",
       "http_directory": "http",
       "iso_checksum": "0ca12fe5f28c2ceed4f4084b41ff8a0b",
