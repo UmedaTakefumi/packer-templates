@@ -21,7 +21,7 @@
       "type": "vagrant",
       "override": {
         "virtualbox": {
-          "output": "centos-6-8-x64-virtualbox.box"
+          "output": "centos-6.8-x86_64-virtualbox.box"
         }
       }
     }
@@ -36,9 +36,9 @@
       "disk_size": 40520,
       "guest_os_type": "RedHat_64",
       "http_directory": "http",
-      "iso_checksum": "28cd663c2267676414496f0929ce7bb285bf2506",
-      "iso_checksum_type": "sha1",
-      "iso_url": "http://ftp.riken.jp/Linux/centos/6/isos/x86_64/CentOS-6.8-x86_64-minimal.iso",
+      "iso_checksum": "0ca12fe5f28c2ceed4f4084b41ff8a0b",
+      "iso_checksum_type": "md5",
+      "iso_url": "http://archive.kernel.org/centos-vault/6.8/isos/x86_64/CentOS-6.8-x86_64-minimal.iso",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -47,7 +47,7 @@
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
       "virtualbox_version_file": ".vbox_version",
       "vboxmanage": [
-        [ "modifyvm", "{{.Name}}", "--memory", "512" ],
+        [ "modifyvm", "{{.Name}}", "--memory", "1024" ],
         [ "modifyvm", "{{.Name}}", "--cpus", "1" ]
       ]
     }
