@@ -1,41 +1,30 @@
 # packer-template
 
+## 使い方
 
-## vagrantとpackerのインストール
-
-### MacOSX(homebrew)の場合
-
-```
-brew install packer
-brew cask install virtualbox virtualbox-extension-pack vagrant
-```
-
-## CentOS6.8
-
-### CentOS 6.8のイメージを作成する場合
+リポジトリクローン:
 
 ```
-cd centos6.8
-packer build template.json
-```
-### 出来上がったboxをvagrantにインポートする
-
-```
-vagrant box add centos-6-8-x64 centos-6-8-x64-virtualbox.box
+$ git clone https://github.com/UmedaTakefumi/packer-templates.git && cd packer-templates
 ```
 
-### vagrant 起動
+イメージを作成する場合(CentOS):
 
 ```
-vagrant init centos-6-8-x64
-vagrant up
-vagrant ssh
+$ cd centos-6.9-x86_64
+$ packer build template.json
+```
+
+vagrantにインポート:
+
+```
+vagrant box add centos-6.9-x86_64 centos-6.9-x86_64-virtualbox.box
 ```
 
 ## 参考にした情報
 
 ```
 https://github.com/shiguredo/packer-templates
+https://github.com/kaorimatz/packer-templates
+https://www.packer.io/docs/templates/index.html
 ```
-
-
