@@ -9,8 +9,8 @@
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
       "guest_os_type": "RedHat_64",
       "http_directory": "http",
-      "iso_checksum": "sha256:7c0dee2a0494dabd84809b72ddb4b761f9ef92b78a506aef709b531c54d30770",
-      "iso_url": "http://ftp.riken.jp/Linux/centos/6.10/isos/x86_64/CentOS-6.10-x86_64-minimal.iso",
+      "iso_checksum": "sha256:659691c28a0e672558b003d223f83938f254b39875ee7559d1a4a14c79173193",
+      "iso_url": "https://ftp.riken.jp/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-2003.iso",
       "shutdown_command": "echo '/sbin/halt -h -p' > /tmp/shutdown.sh; echo 'vagrant'|sudo -S sh '/tmp/shutdown.sh'",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -38,7 +38,7 @@
     {
       "override": {
         "virtualbox": {
-          "output": "centos-6.10-x86_64-virtualbox.box"
+          "output": "centos-7.8.2003-x86_64-virtualbox.box"
         }
       },
       "type": "vagrant"
