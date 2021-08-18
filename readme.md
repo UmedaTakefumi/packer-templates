@@ -2,23 +2,15 @@
 
 ## 使い方
 
-リポジトリクローン:
 
-```
-$ git clone https://github.com/UmedaTakefumi/packer-templates.git && cd packer-templates
-```
 
-イメージを作成する場合(CentOS):
+### Centos 6.9 x86_64
 
 ```
 $ cd centos-6.9-x86_64
 $ packer build template.json
-```
-
-vagrantにインポート:
-
-```
 $ vagrant box add centos-6.9-x86_64 centos-6.9-x86_64-virtualbox.box
+$ find . -name *.box -or -name *.iso | xargs -I{} rm {}
 ```
 
 リポジトリ内の.boxの掃除(一括削除):
