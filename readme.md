@@ -3,6 +3,14 @@
 ## 使い方
 
 
+### centos-8.2.2004-x86_64
+
+```
+$ cd centos-8.2.2004-x86_64
+$ packer build template.json
+$ vagrant box add centos-8.2.2004-x86_64 centos-8.2.2004-x86_64-virtualbox.box
+$ find . -name *.box -or -name *.iso | xargs -I{} rm {}
+```
 
 ### Centos 6.9 x86_64
 
