@@ -1,7 +1,10 @@
 # packer-template
 
-## 使い方
+## Description
 
+Packer template for Vagrant base boxes
+
+## building Vagrant base boxes
 
 ### centos-8.2.2004-x86_64
 
@@ -9,7 +12,6 @@
 $ cd centos-8.2.2004-x86_64
 $ packer build template.json
 $ vagrant box add centos-8.2.2004-x86_64 centos-8.2.2004-x86_64-virtualbox.box
-$ find . -name *.box -or -name *.iso | xargs -I{} rm {}
 ```
 
 ### Centos 6.9 x86_64
@@ -18,16 +20,16 @@ $ find . -name *.box -or -name *.iso | xargs -I{} rm {}
 $ cd centos-6.9-x86_64
 $ packer build template.json
 $ vagrant box add centos-6.9-x86_64 centos-6.9-x86_64-virtualbox.box
+```
+
+
+## Cleanup repository
+
+```
 $ find . -name *.box -or -name *.iso | xargs -I{} rm {}
 ```
 
-リポジトリ内の.boxの掃除(一括削除):
-
-```
-$ find . -name *.box -or -name *.iso | xargs -I{} rm {}
-```
-
-## 参考にした情報
+## Reference
 
 * https://github.com/shiguredo/packer-templates
 * https://github.com/kaorimatz/packer-templates
