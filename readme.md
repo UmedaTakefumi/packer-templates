@@ -14,7 +14,7 @@ packer build template.json
 vagrant box add centos-8.2.2004-x86_64 centos-8.2.2004-x86_64-virtualbox.box
 ```
 
-### Centos7.9.2009 x86_64
+### Centos 7.9.2009 x86_64
 
 ```
 cd centos-7.9.2009-x86_64
