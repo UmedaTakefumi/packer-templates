@@ -6,7 +6,7 @@ Packer template for Vagrant base boxes
 
 ## building Vagrant base boxes
 
-### centos-8.2.2004-x86_64
+### Centos 8.2.2004 x86_64
 
 ```
 cd centos-8.2.2004-x86_64
@@ -14,7 +14,7 @@ packer build template.json
 vagrant box add centos-8.2.2004-x86_64 centos-8.2.2004-x86_64-virtualbox.box
 ```
 
-### centos-7.9.2009-x86_64/
+### Centos7.9.2009 x86_64
 
 ```
 cd centos-7.9.2009-x86_64
@@ -30,12 +30,20 @@ packer build template.json
 vagrant box add centos-6.9-x86_64 centos-6.9-x86_64-virtualbox.box
 ```
 
-
 ## Cleanup repository
 
 ```
 $ find . -name *.box -or -name *.iso | xargs -I{} rm {}
 ```
+
+## Configration VirtaulBox VirtalMachine
+
+User Variable       | Default Value | Description
+--------------------|---------------|----------------------------------------------------------------------------------------
+cpus                | 2             | Number of CPUs
+memory(RAM)         | 2048          | Memory size in MB
+
+
 
 ## Reference
 
