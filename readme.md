@@ -22,12 +22,12 @@ packer build template.json
 vagrant box add centos-7.9.2009-x86_64 centos-7.9.2009-x86_64-virtualbox.box
 ```
 
-### Centos 6.9 x86_64
+### Centos 6.0 x86_64
 
 ```
-cd centos-6.9-x86_64
+cd centos-6.0-x86_64
 packer build template.json
-vagrant box add centos-6.9-x86_64 centos-6.9-x86_64-virtualbox.box
+vagrant box add centos-6.0-x86_64 centos-6.0-x86_64-virtualbox.box
 ```
 
 ## Cleanup repository
