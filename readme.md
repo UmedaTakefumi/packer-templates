@@ -6,10 +6,8 @@ Packer template for Vagrant base boxes
 
 ## list packer template 
 
-os-type | relese-version | prosessor-type     | security-attention | 
---------|----------------|--------------------|--------------------|
-CentOS  | 6.0            | x86_64             | |
 
+* [centos-6.0-x86_64]()
 
 ## building Vagrant base boxes
 
