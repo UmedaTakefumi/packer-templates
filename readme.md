@@ -15,9 +15,14 @@ Packer template for Vagrant base boxes
 ### Centos 8.2.2004 x86_64
 
 ```
-cd centos-8.2.2004-x86_64
+# git clone url
+VAGRAND_BOX_NAME=centos-8.2.2004-x86_64
+cd $VAGRAND_BOX_NAME
 packer build template.json
-vagrant box add centos-8.2.2004-x86_64 centos-8.2.2004-x86_64-virtualbox.box
+vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
+mkdir -p ~/Vgrant/$VAGRAND_BOX_NAME
+cd ~/Vgrant/$VAGRAND_BOX_NAME
+vagrant init $VAGRAND_BOX_NAME
 ```
 
 ### Centos 7.9.2009 x86_64
