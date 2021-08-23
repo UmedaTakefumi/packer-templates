@@ -18,6 +18,7 @@ Packer template for Vagrant base boxes
 VAGRAND_BOX_NAME=centos-8.2.2004-x86_64
 
 # git clone https://github.com/UmedaTakefumi/packer-templates.git
+# cd packer-templates
 cd $VAGRAND_BOX_NAME
 packer build template.json
 vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
@@ -32,6 +33,7 @@ vagrant init $VAGRAND_BOX_NAME
 VAGRAND_BOX_NAME=centos-7.9.2009-x86_64
 
 # git clone https://github.com/UmedaTakefumi/packer-templates.git
+# cd packer-templates
 cd $VAGRAND_BOX_NAME
 packer build template.json
 vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
@@ -46,6 +48,7 @@ vagrant init $VAGRAND_BOX_NAME
 VAGRAND_BOX_NAME=centos-6.0-x86_64
 
 # git clone https://github.com/UmedaTakefumi/packer-templates.git
+# cd packer-templates
 cd $VAGRAND_BOX_NAME
 packer build template.json
 vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
