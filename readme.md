@@ -9,7 +9,7 @@ Packer template for Vagrant base boxes
   * [Minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
   * [kubernets](https://kubernetes.io)
 
-* high-layer-application is no-build-kernel-work, no-network-simulation-work.
+* Definition here high-layer-application is no-build-kernel-work, no-network-simulation-work.
 
 ## building Vagrant base boxes
 
