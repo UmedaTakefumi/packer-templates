@@ -29,17 +29,29 @@ vagrant init $VAGRAND_BOX_NAME
 ### Centos 7.9.2009 x86_64
 
 ```
-cd centos-7.9.2009-x86_64
+VAGRAND_BOX_NAME=centos-7.9.2009-x86_64
+
+# git clone https://github.com/UmedaTakefumi/packer-templates.git
+cd $VAGRAND_BOX_NAME
 packer build template.json
-vagrant box add centos-7.9.2009-x86_64 centos-7.9.2009-x86_64-virtualbox.box
+vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
+mkdir -p ~/Vgrant/$VAGRAND_BOX_NAME
+cd ~/Vgrant/$VAGRAND_BOX_NAME
+vagrant init $VAGRAND_BOX_NAME
 ```
 
 ### Centos 6.0 x86_64
 
 ```
-cd centos-6.0-x86_64
+VAGRAND_BOX_NAME=centos-6.0-x86_64
+
+# git clone https://github.com/UmedaTakefumi/packer-templates.git
+cd $VAGRAND_BOX_NAME
 packer build template.json
-vagrant box add centos-6.0-x86_64 centos-6.0-x86_64-virtualbox.box
+vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
+mkdir -p ~/Vgrant/$VAGRAND_BOX_NAME
+cd ~/Vgrant/$VAGRAND_BOX_NAME
+vagrant init $VAGRAND_BOX_NAME
 ```
 
 ## Cleanup repository
