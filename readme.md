@@ -4,7 +4,7 @@
 
 Packer template for Vagrant base boxes
 
-* Click here for application testing:
+* Click here for high-layer-application testing:
   * [docker docs](https://docs.docker.com)
   * [Minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
   * [kubernets](https://kubernetes.io)
