@@ -4,14 +4,14 @@
 
 Packer template for Vagrant base boxes
 
-## list packer template 
-
-* CentOS
-  * [CentOS 8.2.2004 x86_64]()
-  * [Centos 7.9.2009 x86_64]()
-  * [Centos 6.0 x86_64]()
 
 ## building Vagrant base boxes
+
+* CentOS
+  * [CentOS 8.2.2004 x86_64](https://github.com/UmedaTakefumi/packer-templates#centos-822004-x86_64)
+  * [CentOs 7.9.2009 x86_64]()
+  * [CentOs 6.0 x86_64]()
+
 
 ### Centos 8.2.2004 x86_64
 
@@ -50,7 +50,12 @@ User Variable       | Default Value | Description
 cpus                | 2             | Number of CPUs
 memory(RAM)         | 2048          | Memory size in MB
 
+## List maintenance of packer template 
 
+* CentOS
+  * [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)
+  * [CentOs 7.9.2009 x86_64](centos-7.9.2009-x86_64)
+  * [CentOs 6.0 x86_64](centos-6.0-x86_64)
 
 ## Reference
 
