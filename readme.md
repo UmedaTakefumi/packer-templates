@@ -78,8 +78,8 @@ memory(RAM)         | 2048          | Memory size in MB
 
 * CentOS
   * [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)
-  * [CentOs 7.9.2009 x86_64](centos-7.9.2009-x86_64)
-  * [CentOs 6.0 x86_64](centos-6.0-x86_64)
+  * [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)
+  * [CentOS 6.0 x86_64](centos-6.0-x86_64)
 
 ## Reference
 
