@@ -16,8 +16,7 @@ Packer template for Vagrant base boxes
 
 ```
 VAGRAND_BOX_NAME=centos-8.2.2004-x86_64
-```
-```
+
 # git clone https://github.com/UmedaTakefumi/packer-templates.git
 cd $VAGRAND_BOX_NAME
 packer build template.json
