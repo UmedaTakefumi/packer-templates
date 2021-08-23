@@ -6,8 +6,10 @@ Packer template for Vagrant base boxes
 
 ## list packer template 
 
-
-* [centos-6.0-x86_64]()
+* CentOS
+  * [CentOS 8.2.2004 x86_64]()
+  * [Centos 7.9.2009 x86_64]()
+  * [Centos 6.0 x86_64]()
 
 ## building Vagrant base boxes
 
