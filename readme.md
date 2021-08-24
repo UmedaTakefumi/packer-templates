@@ -13,7 +13,7 @@ Packer template for Vagrant base boxes
 
 ## Requirements software
 
-* macOS + VirutalBox
+* [macOS + VirutalBox](https://github.com/UmedaTakefumi/packer-templates#macos-bigsur--homebrew--virtualbox)
 
 ## building Vagrant base boxes
 
