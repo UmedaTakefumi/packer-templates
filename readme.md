@@ -24,7 +24,7 @@ Packer template for Vagrant base boxes
   * [CentOS 6.1 x86_64](https://github.com/UmedaTakefumi/packer-templates#centos-61-x86_64)
   * [CentOS 6.1 i386](https://github.com/UmedaTakefumi/packer-templates#centos-61-i386)
   * [CentOS 6.0 x86_64](https://github.com/UmedaTakefumi/packer-templates#centos-60-x86_64)
-  * [CentOS 6.0 i386](https://github.com/UmedaTakefumi/packer-templates#centos-60-i386)
+  * [CentOS 6.0 i386(macOS BigSur, VirtualBox)](https://github.com/UmedaTakefumi/packer-templates#centos-60-i386)
 
 ## List maintenance of packer template 
 
@@ -96,10 +96,10 @@ cd ~/Vgrant/$VAGRAND_BOX_NAME
 vagrant init $VAGRAND_BOX_NAME
 ```
 
-### CentOS 6.0 x86_64
+### CentOS 6.0 x86_64(macOS BigSur, VirtualBox)
 
 ```
-VAGRAND_BOX_NAME=centos-6.0-x86_64(macOS BigSur, VirtualBox)
+VAGRAND_BOX_NAME=centos-6.0-x86_64
 
 # git clone https://github.com/UmedaTakefumi/packer-templates.git
 # cd packer-templates
