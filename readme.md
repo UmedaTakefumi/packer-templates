@@ -139,7 +139,7 @@ $ find . -name *.box -or -name *.iso | xargs -I{} rm {}
 * install the homebrew: https://brew.sh
 
 ```
-brew install vagrant virtualbox packer
+brew install virtualbox virtualbox-extension-pack vagrant packer
 ```
 
 ## Configration VirtaulBox VirtalMachine
