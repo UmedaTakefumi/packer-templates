@@ -36,7 +36,7 @@ Packer template for Vagrant base boxes
   * [CentOS 6.0 x86_64](centos-6.0-x86_64)
   * [CentOS 6.0 i386](centos-6.0-i386)
 
-### CentOS 8.2.2004 x86_64 for VirtaulBox
+### CentOS 8.2.2004 x86_64 for VirtualBox
 
 ```
 VAGRAND_BOX_NAME=centos-8.2.2004-x86_64
@@ -66,7 +66,7 @@ cd ~/Vgrant/$VAGRAND_BOX_NAME
 vagrant init $VAGRAND_BOX_NAME
 ```
 
-### CentOS 6.1 x86_64 for VirutalBox
+### CentOS 6.1 x86_64 for VirtualBox
 
 ```
 VAGRAND_BOX_NAME=centos-6.1-x86_64
