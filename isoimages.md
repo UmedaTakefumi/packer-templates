@@ -1,12 +1,11 @@
-# ISOイメージのダウンロード先 Memo
+# Get the iso image
 
-## CentOS
+## CentOS Mirror List
 
-最近のCentOS6.xのイメージのダウンロード先
+* https://www.centos.org/download/mirrors/
 
-http://ftp.riken.jp/Linux/centos/
-
- 古いバージョンのCentOS6.xのイメージを取得するには
+* Asia/Japan
+  * [NewMedia Express Pte Ltd]()
 
 * http://archive.kernel.org/centos-vault/6.0/isos/
 * http://archive.kernel.org/centos-vault/6.1/isos/
