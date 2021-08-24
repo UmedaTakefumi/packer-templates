@@ -14,8 +14,6 @@ Packer template for Vagrant base boxes
 ## Requirements software
 
 * macOS + VirutalBox
-* macOS + VMware Fusion
-* macOS + QEMU
 
 ## building Vagrant base boxes
 
@@ -121,6 +119,16 @@ vagrant init $VAGRAND_BOX_NAME
 
 ```
 $ find . -name *.box -or -name *.iso | xargs -I{} rm {}
+```
+
+## Install the required software
+
+### macOS BigSur + homebrew + VirtualBox
+
+* install the homebrew -> https://brew.sh
+
+```
+brew install vagrant virtualbox packer
 ```
 
 ## Configration VirtaulBox VirtalMachine
