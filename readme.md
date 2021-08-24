@@ -99,7 +99,7 @@ vagrant init $VAGRAND_BOX_NAME
 ### CentOS 6.0 x86_64
 
 ```
-VAGRAND_BOX_NAME=centos-6.0-x86_64
+VAGRAND_BOX_NAME=centos-6.0-x86_64(macOS BigSur, VirtualBox)
 
 # git clone https://github.com/UmedaTakefumi/packer-templates.git
 # cd packer-templates
@@ -111,7 +111,7 @@ cd ~/Vgrant/$VAGRAND_BOX_NAME
 vagrant init $VAGRAND_BOX_NAME
 ```
 
-### CentOS 6.0 i386
+### CentOS 6.0 i386(macOS BigSur, VirtualBox)
 
 ```
 VAGRAND_BOX_NAME=centos-6.0-i386
