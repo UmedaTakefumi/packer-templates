@@ -119,7 +119,7 @@ VAGRAND_BOX_NAME=centos-6.0-i386
 # git clone https://github.com/UmedaTakefumi/packer-templates.git
 # cd packer-templates
 cd $VAGRAND_BOX_NAME
-packer build template.json
+packer build --only=virtualbox-iso template.json
 vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
 mkdir -p ~/Vgrant/$VAGRAND_BOX_NAME
 cd ~/Vgrant/$VAGRAND_BOX_NAME
