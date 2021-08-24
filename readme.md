@@ -96,7 +96,7 @@ cd ~/Vgrant/$VAGRAND_BOX_NAME
 vagrant init $VAGRAND_BOX_NAME
 ```
 
-### CentOS 6.0 x86_64 / VirtualBox
+### CentOS 6.0 x86_64 for VirtualBox
 
 ```
 VAGRAND_BOX_NAME=centos-6.0-x86_64
@@ -111,7 +111,7 @@ cd ~/Vgrant/$VAGRAND_BOX_NAME
 vagrant init $VAGRAND_BOX_NAME
 ```
 
-### CentOS 6.0 i386 / VirtualBox
+### CentOS 6.0 i386 for VirtualBox
 
 ```
 VAGRAND_BOX_NAME=centos-6.0-i386
