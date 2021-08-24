@@ -106,3 +106,4 @@ memory(RAM)         | 2048          | Memory size in MB
 * https://github.com/shiguredo/packer-templates
 * https://github.com/kaorimatz/packer-templates
 * https://www.packer.io/docs/templates/index.html
+* https://www.packer.io/docs
