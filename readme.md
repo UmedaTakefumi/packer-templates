@@ -126,12 +126,6 @@ cd ~/Vgrant/$VAGRAND_BOX_NAME
 vagrant init $VAGRAND_BOX_NAME
 ```
 
-## Cleanup repository
-
-```
-$ find . -name *.box -or -name *.iso | xargs -I{} rm {}
-```
-
 ## Install the required software
 
 ### macOS BigSur + homebrew + VirtualBox
