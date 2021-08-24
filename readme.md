@@ -136,7 +136,7 @@ $ find . -name *.box -or -name *.iso | xargs -I{} rm {}
 
 ### macOS BigSur + homebrew + VirtualBox
 
-* install the homebrew -> https://brew.sh
+* install the homebrew: https://brew.sh
 
 ```
 brew install vagrant virtualbox packer
