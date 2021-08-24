@@ -11,6 +11,12 @@ Packer template for Vagrant base boxes
 
 * Definition here high-layer-application is no-build-kernel-work, no-network-simulation-work.
 
+## Requirements software
+
+* macOS + VirutalBox
+* macOS + VMware Fusion
+* macOS + QEMU
+
 ## building Vagrant base boxes
 
 * CentOS
