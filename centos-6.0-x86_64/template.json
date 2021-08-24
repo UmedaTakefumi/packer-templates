@@ -38,7 +38,7 @@
     {
       "override": {
         "virtualbox": {
-          "output": "centos-6-0-x64-virtualbox.box"
+          "output": "centos-6.0-x86_64-virtualbox.box"
         }
       },
       "type": "vagrant"
