@@ -178,14 +178,14 @@ memory(RAM)         | 2048          | Memory size in MB
 ## Reference
 
 * https://github.com/shiguredo/packer-templates
-  * Access: 2021-08-25T12:00:0+09:00
+  * Access: 2021-08-25T12:00:00+09:00
   * Title: shiguredo/packer-templates: This repository has finished updating
 * https://github.com/kaorimatz/packer-templates
-  * Access: 2021-08-25T12:00:0+09:00
+  * Access: 2021-08-25T12:00:00+09:00
   * Title: kaorimatz/packer-templates: Packer templates for Vagrant base boxes
 * https://www.packer.io/docs/templates/index.html
-  * Access: 2021-08-25T12:00:0+09:00
+  * Access: 2021-08-25T12:00:00+09:00
   * Title: Templates | Packer by HashiCorp
 * https://www.packer.io/docs
-  * Access: 2021-08-25T12:00:0+09:00
+  * Access: 2021-08-25T12:00:00+09:00
   * Title: Documentation | Packer by HashiCorp
