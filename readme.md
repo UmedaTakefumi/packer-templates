@@ -21,6 +21,7 @@ Packer template for Vagrant base boxes
 * CentOS
   * [CentOS 8.2.2004 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-822004-x86_64-for-virtualbox)
   * [CentOS 7.9.2009 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-792009-x86_64-for-virtualbox)
+  * [CentOS 6.2 i386 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-62-i386-for-virtualbox)
   * [CentOS 6.1 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-61-x86_64-for-virtualbox)
   * [CentOS 6.1 i386 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-61-i386-for-virtualbox)
   * [CentOS 6.0 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-60-x86_64-for-virtualbox)
@@ -31,6 +32,7 @@ Packer template for Vagrant base boxes
 * CentOS
   * [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)
   * [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)
+  * [CentOS 6.2 i386](centos-6.2-i386)
   * [CentOS 6.1 x86_64](centos-6.1-x86_64)
   * [CentOS 6.1 i386](centos-6.1-i386)
   * [CentOS 6.0 x86_64](centos-6.0-x86_64)
