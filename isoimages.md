@@ -17,3 +17,5 @@
 * http://archive.kernel.org/centos-vault/6.7/isos/
 * http://archive.kernel.org/centos-vault/6.8/isos/
 
+
+* https://archive.kernel.org
