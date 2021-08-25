@@ -189,3 +189,7 @@ memory(RAM)         | 2048          | Memory size in MB
 * https://www.packer.io/docs
   * Access: 2021-08-25T12:00:00+09:00
   * Title: Documentation | Packer by HashiCorp
+* https://github.com/joefitzgerald/packer-windows
+  * Access: 2021-08-26T05:00:00+09:00
+  * Title: joefitzgerald/packer-windows: Windows Packer Templates
+
