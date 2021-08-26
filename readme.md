@@ -14,7 +14,7 @@ Packer template for Vagrant base boxes
 ## Requirements software
 
 * [macOS BigSur + homebrew + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#macos-bigsur--homebrew--virtualbox)
-
+* [Windows10 Pro + Chocolatey + VirtualBox]()
 
 ## building Vagrant base boxes
 
@@ -200,6 +200,15 @@ vagrant init $VAGRAND_BOX_NAME
 ```
 brew install virtualbox virtualbox-extension-pack vagrant packer
 ```
+
+### Windows10 Pro + Chocolatey + VirtaulBox
+
+* install the Chocolatey: https://chocolatey.org
+
+```
+choco install virtualbox vagrant packer
+```
+
 
 ## Configration VirtaulBox VirtalMachine
 
