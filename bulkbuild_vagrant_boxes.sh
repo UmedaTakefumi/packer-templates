@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function build_all () {
+function bulkbuild_vagrant_boxes () {
 
   TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
   
@@ -11,5 +11,4 @@ function build_all () {
 
 echo "# Building Vagrant base boxes"
 
-build_all
-
+bulkbuild_vagrant_boxes
