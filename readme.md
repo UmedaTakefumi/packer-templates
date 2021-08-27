@@ -7,6 +7,9 @@ Packer template for Vagrant base boxes
 * Click here for high-layer-application testing:
   * [docker docs](https://docs.docker.com)
     * [Docker Hub](https://hub.docker.com/search?q=&type=image)
+      * [CentOS official Image](https://hub.docker.com/_/centos)
+      * [fedora official Image](https://hub.docker.com/_/fedora)
+      * [Ubuntu official Image](https://hub.docker.com/_/ubuntu)
   * [Minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
   * [kubernets](https://kubernetes.io)
 
