@@ -20,7 +20,7 @@ Packer template for Vagrant base boxes
 * Tests pattern
   * [macOS BigSur + homebrew + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#macos-bigsur--homebrew--virtualbox)
   * [Windows10 Pro + Chocolatey + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#windows10-pro--chocolatey--virtaulbox)
-  * [fedora 32 + homebrew + virtualbox]()
+  * [Fedora 34 + homebrew + VirtualBox(no-homebrew)](https://github.com/UmedaTakefumi/packer-templates#fedora-34--homebrew--virtualboxno-homebrew)
 
 ## building Vagrant base boxes
 
