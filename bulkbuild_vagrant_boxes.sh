@@ -1,8 +1,10 @@
 #!/bin/bash
 
+VAGRAND_BOX_NAME_DIRLIST=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
+
 function bulkbuild_vagrant_boxes () {
 
-  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
+  TEMPLATE_DIRS=$1
   
   for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
     echo "## $VAGRAND_BOX_NAME"
@@ -16,13 +18,15 @@ function bulkbuild_vagrant_boxes () {
   done
 }
 
-function build_todolist () {
+function CheckStatus_todolist () {
 
-
-
+  for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
+    echo "## $VAGRAND_BOX_NAME"
+    cd $VAGRAND_BOX_NAME
+  done
 }
-
 
 echo "# Building Vagrant base boxes"
 
-bulkbuild_vagrant_boxes
+#bulkbuild_vagrant_boxes $VAGRAND_BOX_NAME_DIRLIST
+
