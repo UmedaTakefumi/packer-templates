@@ -20,6 +20,7 @@ Packer template for Vagrant base boxes
 * Tests pattern
   * [macOS BigSur + homebrew + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#macos-bigsur--homebrew--virtualbox)
   * [Windows10 Pro + Chocolatey + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#windows10-pro--chocolatey--virtaulbox)
+  * [fedora 32 + homebrew + virtualbox]()
 
 ## building Vagrant base boxes
 
@@ -229,6 +230,17 @@ brew install virtualbox virtualbox-extension-pack vagrant packer
 
 ```
 choco install virtualbox vagrant packer
+```
+
+### Fedora 34 + homebrew + VirtualBox(no-homebrew)
+
+* install the VirtualBox: https://www.virtualbox.org/wiki/Downloads
+* install the Vagrant: https://www.vagrantup.com
+
+* install the homebrew: https://brew.sh
+
+```
+brew install packer
 ```
 
 
