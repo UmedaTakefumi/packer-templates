@@ -16,6 +16,13 @@ function bulkbuild_vagrant_boxes () {
   done
 }
 
+function build_todolist () {
+
+
+
+}
+
+
 echo "# Building Vagrant base boxes"
 
 bulkbuild_vagrant_boxes
