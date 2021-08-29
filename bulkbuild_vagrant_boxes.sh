@@ -1,5 +1,13 @@
 #!/bin/bash
 
+function usage_exit () {
+
+  echo "  -b --bulkbuild"
+  echo "  -c --checkstatus"
+  exit 1
+
+}
+
 ## 
 function bulkbuild_vagrant_boxes () {
 
@@ -60,6 +68,6 @@ function CheckStatus_todolist () {
 echo -e "# Building Vagrant base boxes\n"
 
 #bulkbuild_vagrant_boxes
+#CheckStatus_todolist
 
-CheckStatus_todolist
-
+usage_exit
