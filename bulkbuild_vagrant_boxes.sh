@@ -3,7 +3,7 @@
 ## 
 function bulkbuild_vagrant_boxes () {
 
-  TEMPLATE_DIRS=$1
+  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
   
   for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
 
