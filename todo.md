@@ -4,8 +4,8 @@
 
 * ✅ [OK] build box
 * ✅ [OK] import box
-* ✖ [NotOK] mkdir direcotry
-* ✖ [NotOK] vagrant init
+* ✅ [OK] mkdir directory
+* ✅ [OK] vagrant init
 
 
 ## centos-6.0-x86_64
@@ -19,7 +19,7 @@
 ## centos-6.1-i386
 
 * ✅ [OK] build box
-* ✅ [OK] import box
+* ✖ [NotOK] import box [NotOK]
 * ✖ [NotOK] mkdir direcotry
 * ✖ [NotOK] vagrant init
 
@@ -27,7 +27,7 @@
 ## centos-6.1-x86_64
 
 * ✅ [OK] build box
-* ✅ [OK] import box
+* ✖ [NotOK] import box [NotOK]
 * ✖ [NotOK] mkdir direcotry
 * ✖ [NotOK] vagrant init
 
@@ -43,7 +43,7 @@
 ## centos-6.2-i386
 
 * ✅ [OK] build box
-* ✅ [OK] import box
+* ✖ [NotOK] import box [NotOK]
 * ✖ [NotOK] mkdir direcotry
 * ✖ [NotOK] vagrant init
 
@@ -51,7 +51,7 @@
 ## centos-6.2-x86_64
 
 * ✅ [OK] build box
-* ✅ [OK] import box
+* ✖ [NotOK] import box [NotOK]
 * ✖ [NotOK] mkdir direcotry
 * ✖ [NotOK] vagrant init
 
