@@ -28,28 +28,28 @@ function CheckStatus_todolist () {
     echo -e "## $VAGRAND_BOX_NAME\n"
     
     if [ -f $VAGRAND_BOX_NAME/$VAGRAND_BOX_NAME-virtualbox.box ]; then
-      echo "* build box [OK]"
+      echo "* [OK] build box"
     else
-      echo "* build box [NotOK]"
+      echo "* [NotOK] build box"
     fi
     
     vagrant box list | grep $VAGRAND_BOX_NAME | grep virtualbox > /dev/null
     if [ $? = 0 ]; then
-      echo "* import box [OK]"
+      echo "* [OK] import box"
     else
-      echo "* import box [NotOK]"
+      echo "* [NotOK] import box [NotOK]"
     fi
 
     if [ -d ~/Vagrant/$VAGRAND_BOX_NAME ]; then
-      echo "* mkdir directory [OK]"
+      echo "* [OK] mkdir directory"
     else
-      echo "* mkdir direcotry [NotOK]"
+      echo "* [NotOK] mkdir direcotry"
     fi
 
     if [ -f ~/Vagrant/$VAGRAND_BOX_NAME/Vagrantfile ]; then
-      echo "* vagrant init [OK]"
+      echo "* [OK] vagrant init"
     else
-      echo "* vagrant init [NotOK]"
+      echo "* [NotOK] vagrant init"
     fi
 
     echo -e "\n"
