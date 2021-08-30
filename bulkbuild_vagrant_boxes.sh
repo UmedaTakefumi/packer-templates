@@ -105,12 +105,49 @@ function print_header () {
 
 }
 
-#print_header
-#bulkbuild_vagrant_boxes
+## copy and paste
+## 
+## ref: https://qiita.com/b4b4r07/items/dcd6be0bb9c9185475bb
+for OPT in "$@"
+do
+  case $OPT in
+    -h | --help)
+        print_how_to_use
+        exit 1
+        ;;
+    -a | --add-files)
+        print_header
+        add_file
+        shift 1
+        ;;
+    -b | --bulkbuild)
+        print_header
+        bulkbuild_vagrant_boxes
+        shift 1
+        ;;
+    -c | --checkstatus)
+        print_header
+        check_status_todolist
+        shift 1
+        ;;
+    -- | -)
+        shift 1
+        param+=( "$@" )
+        break
+        ;;
+    -*)
+        echo "$PROGNAME: illegal option -- '$(echo $1 | sed 's/^-*//')'" 1>&2
+        exit 1
+        ;;
+    *)
+        if [[ ! -z "$1" ]] && [[ ! "$1" =~ ^-+ ]]; then
+            #param=( ${param[@]} "$1" )
+            param+=( "$1" )
+            shift 1
+        fi
+        ;;
+  esac
+done
 
-#print_header
-#add_file
 
-#print_header
-check_status_todolist
 
