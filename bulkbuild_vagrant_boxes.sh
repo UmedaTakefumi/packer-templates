@@ -118,7 +118,7 @@ do
         ;;
     -a | --add-files)
         print_header
-        add_file
+        add_files
         shift 1
         ;;
     -b | --bulkbuild)
