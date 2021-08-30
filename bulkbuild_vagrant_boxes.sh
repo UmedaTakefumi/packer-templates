@@ -36,7 +36,7 @@ function bulkbuild_vagrant_boxes () {
     echo "Set the PACKER_TEMPLATE."
     echo ""
     echo "example:"
-    echo "  export PACKER_TEMPLTE=$HOME/Temp/packer-templates"
+    echo "  export PACKER_TEMPLATE=$HOME/Temp/packer-templates"
     echo ""
     
     exit 1
