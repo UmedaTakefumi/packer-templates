@@ -1,5 +1,3 @@
-# Building Vagrant base boxes
-
 ## centos-6.0-i386
 
 * ✅ [OK] build box
@@ -20,31 +18,31 @@
 
 * ✅ [OK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
-* ✖ [NotOK] vagrant init
+* ✅ [OK] mkdir directory
+* ✅ [OK] vagrant init
 
 
 ## centos-6.1-x86_64
 
 * ✅ [OK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
-* ✖ [NotOK] vagrant init
+* ✅ [OK] mkdir directory
+* ✅ [OK] vagrant init
 
 
 ## centos-6.10-x86_64
 
 * ✅ [OK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
-* ✖ [NotOK] vagrant init
+* ✅ [OK] mkdir directory
+* ✅ [OK] vagrant init
 
 
 ## centos-6.2-i386
 
 * ✅ [OK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
+* ✅ [OK] mkdir directory
 * ✖ [NotOK] vagrant init
 
 
@@ -52,15 +50,15 @@
 
 * ✅ [OK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
-* ✖ [NotOK] vagrant init
+* ✅ [OK] mkdir directory
+* ✅ [OK] vagrant init
 
 
 ## centos-6.3-i386
 
 * ✖ [NotOK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
+* ✅ [OK] mkdir directory
 * ✖ [NotOK] vagrant init
 
 
@@ -68,7 +66,7 @@
 
 * ✖ [NotOK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
+* ✅ [OK] mkdir directory
 * ✖ [NotOK] vagrant init
 
 
@@ -76,7 +74,7 @@
 
 * ✖ [NotOK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
+* ✅ [OK] mkdir directory
 * ✖ [NotOK] vagrant init
 
 
@@ -84,7 +82,7 @@
 
 * ✖ [NotOK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
+* ✅ [OK] mkdir directory
 * ✖ [NotOK] vagrant init
 
 
@@ -92,7 +90,7 @@
 
 * ✅ [OK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
+* ✅ [OK] mkdir directory
 * ✖ [NotOK] vagrant init
 
 
@@ -100,7 +98,7 @@
 
 * ✖ [NotOK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
+* ✅ [OK] mkdir directory
 * ✖ [NotOK] vagrant init
 
 
@@ -108,7 +106,7 @@
 
 * ✖ [NotOK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
+* ✅ [OK] mkdir directory
 * ✖ [NotOK] vagrant init
 
 
@@ -116,7 +114,7 @@
 
 * ✖ [NotOK] build box
 * ✖ [NotOK] import box [NotOK]
-* ✖ [NotOK] mkdir direcotry
+* ✅ [OK] mkdir directory
 * ✖ [NotOK] vagrant init
 
 
