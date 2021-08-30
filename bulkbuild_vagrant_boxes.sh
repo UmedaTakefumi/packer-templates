@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Displays the usage of the script.
-function how_to_use () {
+function print_how_to_use () {
 
   echo "  -a --add-files"
   echo "  -b --bulkbuild"
