@@ -77,7 +77,7 @@ function check_status_todolist () {
     if [ $? = 0 ]; then
       echo "* ✅ [OK] import box"
     else
-      echo "* ✖ [NotOK] import box [NotOK]"
+      echo "* ✖ [NotOK] import box"
     fi
 
     if [ -d ~/Vagrant/$VAGRAND_BOX_NAME ]; then
