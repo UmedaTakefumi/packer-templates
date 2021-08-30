@@ -32,8 +32,8 @@ function add_files () {
 ## Create a batch of vagrant boxes.
 function bulkbuild_vagrant_boxes () {
 
-  if [ -z "$PACKER_TEMPLATE"]; then
-    echo "Set the PACKER_TEMPLATE."
+  if [ -z "$PACKER_TEMPLATE_BASEDIR"]; then
+    echo "Set the PACKER_TEMPLATE_BASEDIR."
     echo ""
     echo "example:"
     echo "  export PACKER_TEMPLATE_BASEDIR=$HOME/Temp/packer-templates"
