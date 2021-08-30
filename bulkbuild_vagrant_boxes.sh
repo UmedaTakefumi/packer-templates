@@ -14,7 +14,11 @@ function print_how_to_use () {
 }
 
 ## Split the process and register it in a jenkins-job.
-#function add_jenkins_job () {}
+function add_jenkins_job () {
+
+  echo "examination ....."
+
+}
 
 ## Add the missing files.
 function add_files () {
@@ -142,6 +146,11 @@ do
     -c | --checkstatus)
         print_header
         check_status_todolist
+        shift 1
+        ;;
+    -j | --jenkins)
+        print_header
+        add_jenkins_job
         shift 1
         ;;
     -- | -)
