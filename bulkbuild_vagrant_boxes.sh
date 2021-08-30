@@ -20,7 +20,10 @@ function add_files () {
   for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
 
     echo "## $VAGRAND_BOX_NAME"
-    touch $VAGRAND_BOX_NAME/note.md
+
+    if [ ! -f $VAGRAND_BOX_NAME/note.md ]; then
+      touch $VAGRAND_BOX_NAME/note.md
+    fi
 
   done
 
@@ -91,3 +94,10 @@ function print_header () {
   echo "# Building Vagrant base boxes"
 
 }
+
+
+print_header
+bulkbuild_vagrant_boxes
+
+print_header
+
