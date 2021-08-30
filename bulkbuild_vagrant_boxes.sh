@@ -12,6 +12,9 @@ function print_how_to_use () {
 
 }
 
+## Split the process and register it in a jenkins-job.
+#function add_jenkins_job () {}
+
 ## Add the missing files.
 function add_files () {
 
