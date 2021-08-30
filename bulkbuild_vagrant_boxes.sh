@@ -49,8 +49,14 @@ function bulkbuild_vagrant_boxes () {
     echo "## $VAGRAND_BOX_NAME"
     cd $PACKER_TEMPLATE_BASEDIR
     cd $VAGRAND_BOX_NAME
-    packer build --only=virtualbox-iso template.json
-    vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
+
+    if [ -f problem.md ]; then
+      echo "skip ....."
+      continue
+    else
+      packer build --only=virtualbox-iso template.json
+      vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
+    fi
 
     if [ -f $VAGRAND_BOX_NAME-virtualbox.box ]; then
       mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
