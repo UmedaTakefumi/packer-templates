@@ -85,10 +85,9 @@ function CheckStatus_todolist () {
 
 }
 
-#how_to_use
+## 
+function print_header () {
 
-echo -e "# Building Vagrant base boxes\n"
+  echo "# Building Vagrant base boxes"
 
-#bulkbuild_vagrant_boxes
-#CheckStatus_todolist
-
+}
