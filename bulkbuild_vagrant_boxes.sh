@@ -26,8 +26,6 @@ function add_files () {
 
 }
 
-
-
 ## 
 function bulkbuild_vagrant_boxes () {
 
@@ -87,7 +85,7 @@ function CheckStatus_todolist () {
 
 }
 
-how_to_use
+#how_to_use
 
 echo -e "# Building Vagrant base boxes\n"
 
