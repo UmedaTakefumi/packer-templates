@@ -3,11 +3,30 @@
 ## 
 function how_to_use () {
 
+  echo "  -a --add-files"
   echo "  -b --bulkbuild"
   echo "  -c --checkstatus"
+  echo "  -h --help"
+
   exit 1
 
 }
+
+##
+function add_files () {
+
+  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
+
+  for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
+
+    echo "## $VAGRAND_BOX_NAME"
+    touch $VAGRAND_BOX_NAME/note.md
+
+  done
+
+}
+
+
 
 ## 
 function bulkbuild_vagrant_boxes () {
@@ -25,6 +44,7 @@ function bulkbuild_vagrant_boxes () {
     vagrant init $VAGRAND_BOX_NAME
 
   done
+
 }
 
 ## 
@@ -64,6 +84,7 @@ function CheckStatus_todolist () {
     echo -e "\n"
 
   done
+
 }
 
 how_to_use
