@@ -105,9 +105,12 @@ function print_header () {
 
 }
 
+#print_header
+#bulkbuild_vagrant_boxes
 
-print_header
-bulkbuild_vagrant_boxes
+#print_header
+#add_file
 
-print_header
+#print_header
+check_status_todolist
 
