@@ -59,7 +59,7 @@ function bulkbuild_vagrant_boxes () {
 }
 
 ## Check your current progress and create a todo list.
-function CheckStatus_todolist () {
+function check_status_todolist () {
   
   TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
 
