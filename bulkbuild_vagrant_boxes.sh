@@ -36,7 +36,7 @@ function bulkbuild_vagrant_boxes () {
     echo "Set the PACKER_TEMPLATE."
     echo ""
     echo "example:"
-    echo "  export PACKER_TEMPLATE=$HOME/Temp/packer-templates"
+    echo "  export PACKER_TEMPLATE_BASEDIR=$HOME/Temp/packer-templates"
     echo ""
     
     exit 1
@@ -47,6 +47,7 @@ function bulkbuild_vagrant_boxes () {
   for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
 
     echo "## $VAGRAND_BOX_NAME"
+    cd $PACKER_TEMPLATE_BASEDIR
     cd $VAGRAND_BOX_NAME
     packer build --only=virtualbox-iso template.json
     vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
