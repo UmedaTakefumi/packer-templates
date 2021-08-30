@@ -32,6 +32,16 @@ function add_files () {
 ## 
 function bulkbuild_vagrant_boxes () {
 
+  if [ -z "$PACKER_TEMPLATE"]; then
+    echo "Set the PACKER_TEMPLATE."
+    echo ""
+    echo "example:"
+    echo "  export PACKER_TEMPLTE=$HOME/Temp/packer-templates"
+    echo ""
+    
+    exit 1
+  fi
+
   TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
   
   for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
@@ -91,7 +101,7 @@ function CheckStatus_todolist () {
 ## 
 function print_header () {
 
-  echo "# Building Vagrant base boxes"
+  echo -e "# Building Vagrant base boxes\n"
 
 }
 
