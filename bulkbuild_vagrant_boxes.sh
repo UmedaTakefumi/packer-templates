@@ -6,6 +6,7 @@ function print_how_to_use () {
   echo "  -a --add-files"
   echo "  -b --bulkbuild"
   echo "  -c --checkstatus"
+  echo "  -j --jenkins"
   echo "  -h --help"
 
   exit 1
