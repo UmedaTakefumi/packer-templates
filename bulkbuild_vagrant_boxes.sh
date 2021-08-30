@@ -51,9 +51,12 @@ function bulkbuild_vagrant_boxes () {
     cd $VAGRAND_BOX_NAME
     packer build --only=virtualbox-iso template.json
     vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
-    mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
-    cd ~/Vagrant/$VAGRAND_BOX_NAME
-    vagrant init $VAGRAND_BOX_NAME
+
+    if [ -f VAGRAND_BOX_NAME-virtualbox.box ]; then
+      mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
+      cd ~/Vagrant/$VAGRAND_BOX_NAME
+      vagrant init $VAGRAND_BOX_NAME
+    fi
 
   done
 
