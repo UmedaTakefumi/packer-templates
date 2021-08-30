@@ -12,7 +12,7 @@ function how_to_use () {
 
 }
 
-##
+## Add the missing files.
 function add_files () {
 
   TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
@@ -29,7 +29,7 @@ function add_files () {
 
 }
 
-## 
+## Create a batch of vagrant boxes.
 function bulkbuild_vagrant_boxes () {
 
   if [ -z "$PACKER_TEMPLATE"]; then
@@ -58,7 +58,7 @@ function bulkbuild_vagrant_boxes () {
 
 }
 
-## 
+## Check your current progress and create a todo list.
 function CheckStatus_todolist () {
   
   TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
@@ -98,7 +98,7 @@ function CheckStatus_todolist () {
 
 }
 
-## 
+## Displays the header string when the script is executed.
 function print_header () {
 
   echo -e "# Building Vagrant base boxes\n"
