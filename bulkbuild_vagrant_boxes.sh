@@ -1,6 +1,7 @@
 #!/bin/bash
 
-function usage_exit () {
+## 
+function how_to_use () {
 
   echo "  -b --bulkbuild"
   echo "  -c --checkstatus"
@@ -65,9 +66,10 @@ function CheckStatus_todolist () {
   done
 }
 
+how_to_use
+
 echo -e "# Building Vagrant base boxes\n"
 
 #bulkbuild_vagrant_boxes
 #CheckStatus_todolist
 
-usage_exit
