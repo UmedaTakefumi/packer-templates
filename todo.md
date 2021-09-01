@@ -62,6 +62,13 @@
 * ✖ [NotOK] import box
 * ✖ [NotOK] mkdir direcotry
 * ✖ [NotOK] vagrant init
+* problem
+
+```
+Unsupported Hardware Detected
+
+This hardware (or a combination thereof) is not supported by Red Hat. For more information on supported hardware, please refer to http://www.redhat.com/hardware
+```
 
 
 ## centos-6.3-x86_64
@@ -110,6 +117,12 @@
 * ✖ [NotOK] import box
 * ✖ [NotOK] mkdir direcotry
 * ✖ [NotOK] vagrant init
+* problem
+
+```
+freeze
+```
+
 
 
 ## ubuntu-14.04-x86_64
