@@ -91,17 +91,17 @@
 ## centos-7.9.2009-x86_64
 
 * ✅ [OK] build box
-* ✖ [NotOK] import box
+* ✅ [OK] import box
 * ✅ [OK] mkdir directory
-* ✖ [NotOK] vagrant init
+* ✅ [OK] vagrant init
 
 
 ## centos-8.2.2004-x86_64
 
-* ✖ [NotOK] build box
-* ✖ [NotOK] import box
+* ✅ [OK] build box
+* ✅ [OK] import box
 * ✅ [OK] mkdir directory
-* ✖ [NotOK] vagrant init
+* ✅ [OK] vagrant init
 
 
 ## fedora-34-server-x86_64
