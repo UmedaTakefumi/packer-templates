@@ -110,6 +110,11 @@ function check_status_todolist () {
       echo "* ✖ [NotOK] vagrant init"
     fi
 
+    
+    if [ -f $VAGRAND_BOX_NAME/problem.md ]; then
+      echo "* problem"
+      cat $VAGRAND_BOX_NAME/problem.md
+    fi
     echo -e "\n"
 
   done
