@@ -6,26 +6,25 @@ function print_how_to_use () {
   echo "  -a --add-files"
   echo "  -b --bulkbuild"
   echo "  -c --checkstatus"
-  echo "  -j --jenkins"
   echo "  -h --help"
 
   exit 1
 
 }
 
-## Split the process and register it in a jenkins-job.
-function add_jenkins_job () {
+### Split the process and register it in a jenkins-job.
+#function add_jenkins_job () {
+#
+#  echo "examination ....."
+#
+#}
 
-  echo "examination ....."
-
-}
-
-## Use the strace command to check the status of the virtualbox and determine its behavior.
-function check_the_status_of_virtualbox () {
-
-  echo "examination ....."
-
-}
+### Use the strace command to check the status of the virtualbox and determine its behavior.
+#function check_the_status_of_virtualbox () {
+#
+#  echo "examination ....."
+#
+#}
 
 ## Add the missing files.
 function add_files () {
