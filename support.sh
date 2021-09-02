@@ -20,6 +20,13 @@ function add_jenkins_job () {
 
 }
 
+## Use the strace command to check the status of the virtualbox and determine its behavior.
+function check_the_status_of_virtualbox () {
+
+  echo "examination ....."
+
+}
+
 ## Add the missing files.
 function add_files () {
 
