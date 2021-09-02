@@ -2,12 +2,17 @@
   "builders": [
     {
       "boot_command": [
-        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/anaconda-ks.cfg<enter><wait>"
+        "<up><wait><tab> inst.text inst.ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter><wait>"
       ],
+      "cpus": "2",
+      "memory": "2048",
       "boot_wait": "10s",
-      "disk_size": 50000,
+      "disk_size": "50000",
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
+      "guest_additions_url": "",
       "guest_os_type": "Fedora_64",
+      "hard_drive_interface": "sata",
+      "headless": "",
       "http_directory": "http",
       "iso_checksum": "sha256:0b9dc87d060c7c4ef89f63db6d4d1597dd3feaf4d635ca051d87f5e8c89e8675",
       "iso_url": "http://ftp.riken.jp/Linux/fedora/releases/34/Server/x86_64/iso/Fedora-Server-dvd-x86_64-34-1.2.iso",
@@ -17,20 +22,6 @@
       "ssh_timeout": "10000s",
       "ssh_username": "vagrant",
       "type": "virtualbox-iso",
-      "vboxmanage": [
-        [
-          "modifyvm",
-          "{{.Name}}",
-          "--memory",
-          "2048"
-        ],
-        [
-          "modifyvm",
-          "{{.Name}}",
-          "--cpus",
-          "2"
-        ]
-      ],
       "virtualbox_version_file": ".vbox_version"
     }
   ],
