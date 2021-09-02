@@ -266,4 +266,8 @@ memory(RAM)         | 2048          | Memory size in MB
 * https://github.com/joefitzgerald/packer-windows
   * Access: 2021-08-26T05:00:00+09:00
   * Title: joefitzgerald/packer-windows: Windows Packer Templates
+* https://github.com/chef/bento
+  * Access: 2021-09-03T03:00:00+09:00
+  * Title: chef/bento: Packer templates for building minimal Vagrant baseboxes for multiple platforms
+
 
