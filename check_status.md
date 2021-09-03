@@ -77,6 +77,13 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 * 💩 [NotOK] import box
 * 💩 [NotOK] mkdir direcotry
 * 💩 [NotOK] vagrant init
+### problem
+
+```
+Unsupported Hardware Detected
+
+This hardware (or a combination thereof) is not supported by Red Hat. For more information on supported hardware, please refer to http://www.redhat.com/hardware
+```
 
 
 ## centos-6.4-i386
@@ -100,6 +107,13 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 * 💩 [NotOK] import box
 * 💩 [NotOK] mkdir direcotry
 * 💩 [NotOK] vagrant init
+### problem
+
+```
+Unsupported Hardware Detected
+
+This hardware (or a combination thereof) is not supported by Red Hat. For more information on supported hardware, please refer to http://www.redhat.com/hardware
+```
 
 
 ## centos-7.9.2009-x86_64
@@ -124,12 +138,6 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 * ✅ [OK] import box
 * ✅ [OK] mkdir directory
 * ✅ [OK] vagrant init
-### problem
-
-```
-freeze
-```
-
 
 
 ## ubuntu-14.04-x86_64
