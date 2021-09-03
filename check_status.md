@@ -62,6 +62,7 @@
 * 💩 [NotOK] import box
 * 💩 [NotOK] mkdir direcotry
 * 💩 [NotOK] vagrant init
+
 ### problem
 
 ```
@@ -77,6 +78,7 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 * 💩 [NotOK] import box
 * 💩 [NotOK] mkdir direcotry
 * 💩 [NotOK] vagrant init
+
 ### problem
 
 ```
@@ -92,6 +94,7 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 * 💩 [NotOK] import box
 * 💩 [NotOK] mkdir direcotry
 * 💩 [NotOK] vagrant init
+
 ### problem
 
 ```
@@ -107,6 +110,7 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 * 💩 [NotOK] import box
 * 💩 [NotOK] mkdir direcotry
 * 💩 [NotOK] vagrant init
+
 ### problem
 
 ```
