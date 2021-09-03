@@ -118,7 +118,7 @@ function check_status_todolist () {
 
     
     if [ -f $VAGRAND_BOX_NAME/problem.md ]; then
-      echo "### problem"
+      echo -e "\n### problem"
       cat $VAGRAND_BOX_NAME/problem.md
     fi
     echo -e "\n"
