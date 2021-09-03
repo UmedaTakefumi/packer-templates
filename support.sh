@@ -6,6 +6,7 @@ function print_how_to_use () {
   echo "  -a --add-files"
   echo "  -b --bulkbuild"
   echo "  -c --checkstatus"
+  echo "  -d --delete"
   echo "  -h --help"
 
   exit 1
@@ -76,6 +77,24 @@ function bulkbuild_vagrant_boxes () {
       mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
       cd ~/Vagrant/$VAGRAND_BOX_NAME
       vagrant init $VAGRAND_BOX_NAME
+    fi
+
+  done
+
+}
+
+## Delete all vagrant boxes related items at once.
+function bulk_delete_vagrant_boxes () {
+
+  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
+
+  for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
+  
+    #vagrant box remove --force $VAGRAND_BOX_NAME
+    vagrant box list | grep $VAGRAND_BOX_NAME | grep virtualbox > /dev/null
+    if [ $? = 0 ]; then
+      echo "Delete $VAGRAND_BOX_NAME:"
+      vagrant box remove --force $VAGRAND_BOX_NAME
     fi
 
   done
@@ -157,6 +176,11 @@ do
     -c | --checkstatus)
         print_header
         check_status_todolist
+        shift 1
+        ;;
+    -d | --delete)
+        print_header
+        bulk_delete_vagrant_boxes
         shift 1
         ;;
 #    -j | --jenkins)
