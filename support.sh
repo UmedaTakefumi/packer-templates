@@ -82,6 +82,13 @@ function bulkbuild_vagrant_boxes () {
 
 }
 
+## Displays the header string when the script is executed.
+function print_header () {
+
+  echo -e "# Building Vagrant base boxes\n"
+
+}
+
 ## Check your current progress and create a todo list.
 function check_status_todolist () {
   
@@ -124,13 +131,6 @@ function check_status_todolist () {
     echo -e "\n"
 
   done
-
-}
-
-## Displays the header string when the script is executed.
-function print_header () {
-
-  echo -e "# Building Vagrant base boxes\n"
 
 }
 
