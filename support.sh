@@ -159,11 +159,11 @@ do
         check_status_todolist
         shift 1
         ;;
-    -j | --jenkins)
-        print_header
-        add_jenkins_job
-        shift 1
-        ;;
+#    -j | --jenkins)
+#        print_header
+#        add_jenkins_job
+#        shift 1
+#        ;;
     -- | -)
         shift 1
         param+=( "$@" )
