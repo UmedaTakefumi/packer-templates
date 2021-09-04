@@ -28,6 +28,13 @@ function print_how_to_use () {
 #
 #}
 
+## Displays the header string when the script is executed.
+function print_header () {
+
+  echo -e "# Building Vagrant base boxes\n"
+
+}
+
 ## Add the missing files.
 function add_files () {
 
@@ -84,31 +91,6 @@ function bulkbuild_vagrant_boxes () {
 
 }
 
-## Delete all vagrant boxes related items at once.
-function bulk_delete_vagrant_boxes () {
-
-  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
-
-  for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
-  
-    #vagrant box remove --force $VAGRAND_BOX_NAME
-    vagrant box list | grep $VAGRAND_BOX_NAME | grep virtualbox > /dev/null
-    if [ $? = 0 ]; then
-      echo "Delete $VAGRAND_BOX_NAME:"
-      vagrant box remove --force $VAGRAND_BOX_NAME
-    fi
-
-  done
-
-}
-
-## Displays the header string when the script is executed.
-function print_header () {
-
-  echo -e "# Building Vagrant base boxes\n"
-
-}
-
 ## Check your current progress and create a todo list.
 function check_status_todolist () {
   
@@ -149,6 +131,24 @@ function check_status_todolist () {
       cat $VAGRAND_BOX_NAME/problem.md
     fi
     echo -e "\n"
+
+  done
+
+}
+
+## Delete all vagrant boxes related items at once.
+function bulk_delete_vagrant_boxes () {
+
+  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
+
+  for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
+  
+    #vagrant box remove --force $VAGRAND_BOX_NAME
+    vagrant box list | grep $VAGRAND_BOX_NAME | grep virtualbox > /dev/null
+    if [ $? = 0 ]; then
+      echo "Delete $VAGRAND_BOX_NAME:"
+      vagrant box remove --force $VAGRAND_BOX_NAME
+    fi
 
   done
 
