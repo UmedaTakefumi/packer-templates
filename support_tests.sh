@@ -6,11 +6,12 @@
 ## Displays the usage of the script.
 function print_how_to_use () {
 
-  echo "  -a --add-files"
-  echo "  -b --bulkbuild"
-  echo "  -c --checkstatus"
-  echo "  -d --delete"
-  echo "  -h --help"
+  echo "  -a  --add-files"
+  echo "  -b  --bulkbuild"
+  echo "  -c  --checkstatus"
+  echo "  -d  --delete"
+  echo "  -f  --cleanfiles"
+  echo "  -h  --help"
 
 }
 
@@ -154,6 +155,26 @@ function bulk_delete_vagrant_boxes () {
 
 }
 
+## 
+function clean_files () {
+
+  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
+
+  for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
+
+    if [ -d ./$VAGRAND_BOX_NAME/packer_cache/port     ] || \
+       [ -d ./$VAGRAND_BOX_NAME/output-virtualbox-iso ]; then
+
+        echo "cleaning $VAGRAND_BOX_NAME ......"
+        rm -rfv ./$VAGRAND_BOX_NAME/packer_cache/port
+        rm -rfv ./$VAGRAND_BOX_NAME/output-virtualbox-iso      
+    
+    fi
+
+  done
+
+}
+
 ## copy and paste
 ## 
 ## ref: https://qiita.com/b4b4r07/items/dcd6be0bb9c9185475bb
@@ -182,6 +203,11 @@ do
     -d | --delete)
         print_header
         bulk_delete_vagrant_boxes
+        shift 1
+        ;;
+    -f | --cleanfiles)
+        print_header
+        clean_files
         shift 1
         ;;
 #    -j | --jenkins)
