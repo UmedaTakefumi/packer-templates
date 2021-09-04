@@ -11,6 +11,7 @@ function print_how_to_use () {
   echo "  -c  --checkstatus"
   echo "  -d  --deleteboxex"
   echo "  -e  --erasefiles"
+  echo "  -f  --flushfiles"
   echo "  -h  --help"
 
 }
@@ -173,6 +174,26 @@ function erase_files () {
 
 }
 
+## 
+function flush_files () {
+
+  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
+
+  for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
+
+    if [ -d ./$VAGRAND_BOX_NAME/packer_cache     ]      || \
+       [ -d ./$VAGRAND_BOX_NAME/output-virtualbox-iso ] || \
+       [ -f ./$VAGRAND_BOX_NAME/$VAGRAND_BOX_NAME-virtualbox.box ]; then
+        echo "cleaning $VAGRAND_BOX_NAME ......"
+        rm -rfv ./$VAGRAND_BOX_NAME/packer_cache
+        rm -rfv ./$VAGRAND_BOX_NAME/output-virtualbox-iso
+        rm -rfv ./$VAGRAND_BOX_NAME/$VAGRAND_BOX_NAME-virtualbox.box
+    fi
+
+  done
+
+}
+
 ## copy and paste
 ## 
 ## ref: https://qiita.com/b4b4r07/items/dcd6be0bb9c9185475bb
@@ -206,6 +227,11 @@ do
     -e | --erasefiles)
         print_header
         erase_files
+        shift 1
+        ;;
+    -f | --flushfiles)
+        print_header
+        flush_files
         shift 1
         ;;
 #    -j | --jenkins)
