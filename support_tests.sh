@@ -12,8 +12,6 @@ function print_how_to_use () {
   echo "  -d --delete"
   echo "  -h --help"
 
-  exit 1
-
 }
 
 ### Split the process and register it in a jenkins-job.
