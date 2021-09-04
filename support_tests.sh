@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# A script to support testing.
+# Only the maintainer of this repository is useful.
+
 ## Displays the usage of the script.
 function print_how_to_use () {
 
