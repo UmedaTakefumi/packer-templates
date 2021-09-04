@@ -9,7 +9,7 @@ function print_how_to_use () {
   echo "  -a  --add-files"
   echo "  -b  --bulkbuild"
   echo "  -c  --checkstatus"
-  echo "  -d  --delete"
+  echo "  -d  --deleteboxex"
   echo "  -f  --flushfiles"
   echo "  -h  --help"
 
@@ -198,7 +198,7 @@ do
         check_status_todolist
         shift 1
         ;;
-    -d | --delete)
+    -d | --deleteboxex)
         print_header
         bulk_delete_vagrant_boxes
         shift 1
