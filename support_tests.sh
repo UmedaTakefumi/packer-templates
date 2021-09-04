@@ -164,11 +164,9 @@ function clean_files () {
 
     if [ -d ./$VAGRAND_BOX_NAME/packer_cache/port     ] || \
        [ -d ./$VAGRAND_BOX_NAME/output-virtualbox-iso ]; then
-
         echo "cleaning $VAGRAND_BOX_NAME ......"
         rm -rfv ./$VAGRAND_BOX_NAME/packer_cache/port
         rm -rfv ./$VAGRAND_BOX_NAME/output-virtualbox-iso      
-    
     fi
 
   done
