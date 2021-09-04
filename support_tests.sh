@@ -10,7 +10,7 @@ function print_how_to_use () {
   echo "  -b  --bulkbuild"
   echo "  -c  --checkstatus"
   echo "  -d  --delete"
-  echo "  -f  --cleanfiles"
+  echo "  -f  --flushfiles"
   echo "  -h  --help"
 
 }
@@ -156,7 +156,7 @@ function bulk_delete_vagrant_boxes () {
 }
 
 ## Deletes temporarily created working files.
-function clean_files () {
+function flush_files () {
 
   TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
 
@@ -203,9 +203,9 @@ do
         bulk_delete_vagrant_boxes
         shift 1
         ;;
-    -f | --cleanfiles)
+    -f | --flushfiles)
         print_header
-        clean_files
+        flush_files
         shift 1
         ;;
 #    -j | --jenkins)
