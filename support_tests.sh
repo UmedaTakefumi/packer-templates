@@ -155,7 +155,7 @@ function bulk_delete_vagrant_boxes () {
 
 }
 
-## 
+## Deletes temporarily created working files.
 function clean_files () {
 
   TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
