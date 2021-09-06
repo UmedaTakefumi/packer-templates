@@ -174,7 +174,7 @@ function erase_files () {
 
 }
 
-## 
+## Delete files that are not managed by the repository.
 function flush_files () {
 
   TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
