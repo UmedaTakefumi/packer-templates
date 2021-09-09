@@ -12,6 +12,7 @@ function print_how_to_use () {
   echo "  -d  --deleteboxex"
   echo "  -e  --erasefiles"
   echo "  -f  --flushfiles"
+  echo "  -g  --generate_skelton_files"
   echo "  -h  --help"
 
 }
@@ -34,6 +35,31 @@ function print_how_to_use () {
 function print_header () {
 
   echo -e "# Building Vagrant base boxes\n"
+
+}
+
+## Generates a skeleton file. 
+function generate_skelton_files () {
+
+  read -p "Please enter a packer template directory name.: " PACKER_TEMPLATE_DIR
+  echo "packer template dir: $PACKER_TEMPLATE_DIR"
+
+  if [ -d $PACKER_TEMPLATE_DIR ]; then
+    echo "A directory with the same name already exists."
+  else
+    mkdir -p $PACKER_TEMPLATE_DIR
+    touch $PACKER_TEMPLATE_DIR/{readme.md,template.json,note.md}
+    echo -e "\n"
+    ls -l $PACKER_TEMPLATE_DIR
+ 
+    if [ -f $PACKER_TEMPLATE_DIR/readme.md ] && \
+       [ -f $PACKER_TEMPLATE_DIR/template.json ] && \
+       [ -f $PACKER_TEMPLATE_DIR/note.md ]; then
+      echo -e "\ncomplate ......!"
+    else
+      echo "exception ...... orz..."
+    fi
+  fi
 
 }
 
@@ -232,6 +258,11 @@ do
     -f | --flushfiles)
         print_header
         flush_files
+        shift 1
+        ;;
+    -g | --generate-skelton-files)
+        print_header
+        generate_skelton_files
         shift 1
         ;;
 #    -j | --jenkins)
