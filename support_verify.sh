@@ -292,5 +292,6 @@ done
 if [ -z "$param" ]; then
     echo "$PROGNAME: too few arguments" 1>&2
     echo "Try '$PROGNAME --help' for more information." 1>&2
+    print_how_to_use
     exit 1
 fi
