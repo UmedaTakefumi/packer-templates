@@ -25,15 +25,14 @@ Packer template for Vagrant base boxes
 
 ## building Vagrant base boxes
 
-* CentOS
+* CentOS 8.x
   * [CentOS 8.2.2004 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-822004-x86_64-for-virtualbox)
+* CentOS 7.x
   * [CentOS 7.9.2009 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-792009-x86_64-for-virtualbox)
+* CentOS 6.x
   * [CentOS 6.2 x86_64](https://github.com/UmedaTakefumi/packer-templates#centos-62-x86_64-for-virtualbox)
   * [CentOS 6.2 i386 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-62-i386-for-virtualbox)
   * [CentOS 6.1 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-61-x86_64-for-virtualbox)
-  * [CentOS 6.1 i386 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-61-i386-for-virtualbox)
-  * [CentOS 6.0 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-60-x86_64-for-virtualbox)
-  * [CentOS 6.0 i386 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-60-i386-for-virtualbox)
 
 ## List maintenance of packer template 
 
@@ -183,35 +182,7 @@ cd ~/Vagrant/$VAGRAND_BOX_NAME
 vagrant init $VAGRAND_BOX_NAME
 ```
 
-### CentOS 6.0 x86_64 for VirtualBox
 
-```
-VAGRAND_BOX_NAME=centos-6.0-x86_64
-
-# git clone https://github.com/UmedaTakefumi/packer-templates.git
-# cd packer-templates
-cd $VAGRAND_BOX_NAME
-packer build --only=virtualbox-iso template.json
-vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
-mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
-cd ~/Vagrant/$VAGRAND_BOX_NAME
-vagrant init $VAGRAND_BOX_NAME
-```
-
-### CentOS 6.0 i386 for VirtualBox
-
-```
-VAGRAND_BOX_NAME=centos-6.0-i386
-
-# git clone https://github.com/UmedaTakefumi/packer-templates.git
-# cd packer-templates
-cd $VAGRAND_BOX_NAME
-packer build --only=virtualbox-iso template.json
-vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
-mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
-cd ~/Vagrant/$VAGRAND_BOX_NAME
-vagrant init $VAGRAND_BOX_NAME
-```
 
 ## Install the required software
 
