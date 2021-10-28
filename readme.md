@@ -1,5 +1,7 @@
 # packer-template
 
+* [check status](check_status.md)
+
 ## Description
 
 Packer template for Vagrant base boxes
