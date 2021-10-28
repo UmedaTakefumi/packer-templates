@@ -42,8 +42,8 @@
 
 ## centos-6.10-x86_64
 
-* 💩 [NotOK] build box
-* 💩 [NotOK] import box
+* ✅ [OK] build box
+* ✅ [OK] import box
 * ✅ [OK] mkdir directory
 * ✅ [OK] vagrant init
 
