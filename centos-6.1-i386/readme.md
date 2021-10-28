@@ -1,3 +1,8 @@
+# Centos-6.1-i386
+
+## procedure
+
+```
 VAGRAND_BOX_NAME=centos-6.1-i386
 
 # git clone https://github.com/UmedaTakefumi/packer-templates.git
@@ -8,3 +13,4 @@ vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
 mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
 cd ~/Vagrant/$VAGRAND_BOX_NAME
 vagrant init $VAGRAND_BOX_NAME
+```
