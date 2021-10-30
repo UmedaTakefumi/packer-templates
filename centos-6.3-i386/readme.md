@@ -1,4 +1,4 @@
-# CentOS 6.3 x86_64 for VirtualBox
+# CentOS 6.3 i386 for VirtualBox
 
 ## procedure
 
