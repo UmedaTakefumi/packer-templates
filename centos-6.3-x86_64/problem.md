@@ -6,3 +6,4 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 ```
 
 ![](problem_scrennshot-virtaulbox_001.png)
+![](problem_screenshot-virtualbox_001.png)
