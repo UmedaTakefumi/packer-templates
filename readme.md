@@ -43,51 +43,6 @@ Packer template for Vagrant base boxes
 * CentOS 6.x
   * [CentOS 6.10 x86_64](centos-6.10-x86_64)
 
-### CentOS 8.2.2004 x86_64 for VirtualBox
-
-```
-VAGRAND_BOX_NAME=centos-8.2.2004-x86_64
-
-# git clone https://github.com/UmedaTakefumi/packer-templates.git
-# cd packer-templates
-cd $VAGRAND_BOX_NAME
-packer build --only=virtualbox-iso template.json
-vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
-mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
-cd ~/Vagrant/$VAGRAND_BOX_NAME
-vagrant init $VAGRAND_BOX_NAME
-```
-
-### CentOS 7.9.2009 x86_64 for VirtualBox
-
-```
-VAGRAND_BOX_NAME=centos-7.9.2009-x86_64
-
-# git clone https://github.com/UmedaTakefumi/packer-templates.git
-# cd packer-templates
-cd $VAGRAND_BOX_NAME
-packer build --only=virtualbox-iso template.json
-vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
-mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
-cd ~/Vagrant/$VAGRAND_BOX_NAME
-vagrant init $VAGRAND_BOX_NAME
-```
-
-### CentOS 6.10 x86_64 for VirtualBox
-
-```
-VAGRAND_BOX_NAME=centos-6.10-x86_64
-
-# git clone https://github.com/UmedaTakefumi/packer-templates.git
-# cd packer-templates
-cd $VAGRAND_BOX_NAME
-packer build --only=virtualbox-iso template.json
-vagrant box add $VAGRAND_BOX_NAME $VAGRAND_BOX_NAME-virtualbox.box
-mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
-cd ~/Vagrant/$VAGRAND_BOX_NAME
-vagrant init $VAGRAND_BOX_NAME
-```
-
 
 ## Install the required software
 
