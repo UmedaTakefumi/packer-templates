@@ -211,6 +211,14 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 * 💩 [NotOK] vagrant init
 
 
+## centos-6.7-x86_64
+
+* 💩 [NotOK] build box
+* 💩 [NotOK] import box
+* 💩 [NotOK] mkdir direcotry
+* 💩 [NotOK] vagrant init
+
+
 ## centos-7.9.2009-x86_64
 
 * ✅ [OK] build box
