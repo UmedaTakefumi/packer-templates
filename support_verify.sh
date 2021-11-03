@@ -122,7 +122,7 @@ function bulkbuild_vagrant_boxes () {
 ## Check your current progress and create a todo list.
 function check_status_todolist () {
   
-  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh)
+  TEMPLATE_DIRS=$(git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh | grep -v support_verify)
 
   for VAGRAND_BOX_NAME in ${TEMPLATE_DIRS[@]}; do
 
