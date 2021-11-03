@@ -56,6 +56,13 @@ choco install virtualbox vagrant packer
 brew install packer
 ```
 
+## Configration VirtaulBox VirtalMachine
+
+User Variable       | Default Value | Description
+--------------------|---------------|----------------------------------------------------------------------------------------
+cpus                | 2             | Number of CPUs
+memory(RAM)         | 2048          | Memory size in MB
+
 ## building Vagrant base boxes
 
 * CentOS 8.x
@@ -77,12 +84,6 @@ brew install packer
   * [CentOS 6.0 x86_64](centos-6.0-x86_64)
   * [CentOS 6.0 i386](centos-6.0-i386)
 
-## Configration VirtaulBox VirtalMachine
-
-User Variable       | Default Value | Description
---------------------|---------------|----------------------------------------------------------------------------------------
-cpus                | 2             | Number of CPUs
-memory(RAM)         | 2048          | Memory size in MB
 
 ## Reference
 
