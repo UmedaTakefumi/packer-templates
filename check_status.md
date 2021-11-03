@@ -230,6 +230,14 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 * ✅ [OK] vagrant init
 
 
+## fedora-35-server-x86_64
+
+* ✅ [OK] build box
+* ✅ [OK] import box
+* ✅ [OK] mkdir directory
+* ✅ [OK] vagrant init
+
+
 ## ubuntu-14.04-x86_64
 
 * 💩 [NotOK] build box
