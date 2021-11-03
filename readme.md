@@ -63,7 +63,7 @@ memory(RAM)         | 2048          | Memory size in MB
 
 ## building Vagrant base boxes
 
-* Fedora Server
+* Fedora Server x86_64
   * [Fedora-35-server-x86_64](fedora-35-server-x86_64)
   * [Fedora-34-server-x86_64](fedora-34-server-x86_64)
 * CentOS 8.x
