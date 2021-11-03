@@ -48,7 +48,6 @@ choco install virtualbox vagrant packer
 
 * install the VirtualBox: https://www.virtualbox.org/wiki/Downloads
 * install the Vagrant: https://www.vagrantup.com
-
 * install the homebrew: https://brew.sh
 
 ```
