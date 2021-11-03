@@ -151,10 +151,10 @@ This hardware (or a combination thereof) is not supported by Red Hat. For more i
 
 ## centos-6.5-i386
 
-* 💩 [NotOK] build box
-* 💩 [NotOK] import box
-* 💩 [NotOK] mkdir direcotry
-* 💩 [NotOK] vagrant init
+* ✅ [OK] build box
+* ✅ [OK] import box
+* ✅ [OK] mkdir directory
+* ✅ [OK] vagrant init
 
 ### problem
 
