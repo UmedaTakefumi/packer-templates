@@ -28,20 +28,23 @@ Packer template for Vagrant base boxes
 ## building Vagrant base boxes
 
 * CentOS 8.x
-  * [CentOS 8.2.2004 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-822004-x86_64-for-virtualbox)
-* CentOS 7.x
-  * [CentOS 7.9.2009 x86_64 for VirtualBox](https://github.com/UmedaTakefumi/packer-templates#centos-792009-x86_64-for-virtualbox)
-* CentOS 6.x
-  * [CentOS 6.10 x86_64](https://github.com/UmedaTakefumi/packer-templates#centos-610-x86_64-for-virtualbox)
-
-## List maintenance of packer template 
-
-* CentOS 8.x
   * [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)
 * CentOS 7.x
   * [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)
 * CentOS 6.x
   * [CentOS 6.10 x86_64](centos-6.10-x86_64)
+  * [CentOS 6.5 x86_64](centos-6.5-x86_64)
+  * [CentOS 6.5 i386](centos-6.5-i386)
+  * [CentOS 6.4 x86_64](centos-6.4-x86_64)
+  * [CentOS 6.4 i386](centos-6.4-i386)
+  * [CentOS 6.3 x86_64](centos-6.3-x86_64)
+  * [CentOS 6.3 i386](centos-6.3-i386)
+  * [CentOS 6.2 x86_64](centos-6.2-x86_64)
+  * [CentOS 6.2 i386](centos-6.2-i386)
+  * [CentOS 6.1 x86_64](centos-6.1-x86_64)
+  * [CentOS 6.1 i386](centos-6.1-i386)
+  * [CentOS 6.0 x86_64](centos-6.0-x86_64)
+  * [CentOS 6.0 i386](centos-6.0-i386)
 
 
 ## Install the required software
