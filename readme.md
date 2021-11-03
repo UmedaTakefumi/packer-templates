@@ -63,12 +63,16 @@ memory(RAM)         | 2048          | Memory size in MB
 
 ## building Vagrant base boxes
 
+* Fedora Server
+  * [Fedora-35-server-x86_64](fedora-35-server-x86_64)
+  * [Fedora-34-server-x86_64](fedora-34-server-x86_64)
 * CentOS 8.x
   * [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)
 * CentOS 7.x
   * [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)
 * CentOS 6.x x86_64
   * [CentOS 6.10 x86_64](centos-6.10-x86_64)
+  * [CentOS 6.6 x86_64](centos-6.5-x86_64)
   * [CentOS 6.5 x86_64](centos-6.5-x86_64)
   * [CentOS 6.4 x86_64](centos-6.4-x86_64)
   * [CentOS 6.3 x86_64](centos-6.3-x86_64)
@@ -77,6 +81,7 @@ memory(RAM)         | 2048          | Memory size in MB
   * [CentOS 6.0 x86_64](centos-6.0-x86_64)
 * CentOS 6.x i386
   * [CentOS 6.10 i386](centos-6.10-i386)
+  * [CentOS 6.6 i386](centos-6.5-i386)
   * [CentOS 6.5 i386](centos-6.5-i386)
   * [CentOS 6.4 i386](centos-6.4-i386)
   * [CentOS 6.3 i386](centos-6.3-i386)
