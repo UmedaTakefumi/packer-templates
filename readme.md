@@ -78,6 +78,7 @@ memory(RAM)         | 2048          | Memory size in MB
   * [CentOS 6.1 x86_64](centos-6.1-x86_64)
   * [CentOS 6.0 x86_64](centos-6.0-x86_64)
 * CentOS 6.x i386
+  * [CentOS 6.10 i386](centos-6.10-i386)
   * [CentOS 6.5 i386](centos-6.5-i386)
   * [CentOS 6.4 i386](centos-6.4-i386)
   * [CentOS 6.3 i386](centos-6.3-i386)
