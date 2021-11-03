@@ -9,8 +9,8 @@
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
       "guest_os_type": "RedHat",
       "http_directory": "http",
-      "iso_checksum": "md5:081ce8ba3e9f761a35d47f1c345562c1",
-      "iso_url": "https://archive.kernel.org/centos-vault/6.3/isos/i386/CentOS-6.3-i386-minimal.iso",
+      "iso_checksum": "md5:6b5c727fa76fcce7c9ab6213ad3df75a",
+      "iso_url": "https://archive.kernel.org/centos-vault/6.4/isos/i386/CentOS-6.4-i386-minimal.iso",
       "shutdown_command": "echo '/sbin/halt -h -p' > /tmp/shutdown.sh; echo 'vagrant'|sudo -S sh '/tmp/shutdown.sh'",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -38,7 +38,7 @@
     {
       "override": {
         "virtualbox": {
-          "output": "centos-6.3-i386-virtualbox.box"
+          "output": "centos-6.4-i386-virtualbox.box"
         }
       },
       "type": "vagrant"
