@@ -25,26 +25,6 @@ Packer template for Vagrant base boxes
   * [Windows10 Pro + Chocolatey + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#windows10-pro--chocolatey--virtaulbox)
   * [Fedora 34 + homebrew + VirtualBox(no-homebrew)](https://github.com/UmedaTakefumi/packer-templates#fedora-34--homebrew--virtualboxno-homebrew)
 
-## building Vagrant base boxes
-
-* CentOS 8.x
-  * [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)
-* CentOS 7.x
-  * [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)
-* CentOS 6.x
-  * [CentOS 6.10 x86_64](centos-6.10-x86_64)
-  * [CentOS 6.5 x86_64](centos-6.5-x86_64)
-  * [CentOS 6.5 i386](centos-6.5-i386)
-  * [CentOS 6.4 x86_64](centos-6.4-x86_64)
-  * [CentOS 6.4 i386](centos-6.4-i386)
-  * [CentOS 6.3 x86_64](centos-6.3-x86_64)
-  * [CentOS 6.3 i386](centos-6.3-i386)
-  * [CentOS 6.2 x86_64](centos-6.2-x86_64)
-  * [CentOS 6.2 i386](centos-6.2-i386)
-  * [CentOS 6.1 x86_64](centos-6.1-x86_64)
-  * [CentOS 6.1 i386](centos-6.1-i386)
-  * [CentOS 6.0 x86_64](centos-6.0-x86_64)
-  * [CentOS 6.0 i386](centos-6.0-i386)
 
 
 ## Install the required software
@@ -76,6 +56,26 @@ choco install virtualbox vagrant packer
 brew install packer
 ```
 
+## building Vagrant base boxes
+
+* CentOS 8.x
+  * [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)
+* CentOS 7.x
+  * [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)
+* CentOS 6.x
+  * [CentOS 6.10 x86_64](centos-6.10-x86_64)
+  * [CentOS 6.5 x86_64](centos-6.5-x86_64)
+  * [CentOS 6.5 i386](centos-6.5-i386)
+  * [CentOS 6.4 x86_64](centos-6.4-x86_64)
+  * [CentOS 6.4 i386](centos-6.4-i386)
+  * [CentOS 6.3 x86_64](centos-6.3-x86_64)
+  * [CentOS 6.3 i386](centos-6.3-i386)
+  * [CentOS 6.2 x86_64](centos-6.2-x86_64)
+  * [CentOS 6.2 i386](centos-6.2-i386)
+  * [CentOS 6.1 x86_64](centos-6.1-x86_64)
+  * [CentOS 6.1 i386](centos-6.1-i386)
+  * [CentOS 6.0 x86_64](centos-6.0-x86_64)
+  * [CentOS 6.0 i386](centos-6.0-i386)
 
 ## Configration VirtaulBox VirtalMachine
 
