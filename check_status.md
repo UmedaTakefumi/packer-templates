@@ -101,15 +101,15 @@ Unsupported Hardware Detected
 This hardware (or a combination thereof) is not supported by Red Hat. For more information on supported hardware, please refer to http://www.redhat.com/hardware
 ```
 
-![](problem_scrennshot-virtaulbox_001.png)
+![](problem_screenshot-virtualbox_001.png)
 
 
 ## centos-6.4-i386
 
-* 💩 [NotOK] build box
-* 💩 [NotOK] import box
-* 💩 [NotOK] mkdir direcotry
-* 💩 [NotOK] vagrant init
+* ✅ [OK] build box
+* ✅ [OK] import box
+* ✅ [OK] mkdir directory
+* ✅ [OK] vagrant init
 
 ### problem
 
@@ -118,6 +118,9 @@ Unsupported Hardware Detected
 
 This hardware (or a combination thereof) is not supported by Red Hat. For more information on supported hardware, please refer to http://www.redhat.com/hardware
 ```
+
+![](problem_scrennshot-virtualbox_001.png)
+
 
 
 ## centos-6.4-x86_64
