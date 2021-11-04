@@ -14,4 +14,3 @@ mkdir -p ~/Vagrant/$VAGRAND_BOX_NAME
 cd ~/Vagrant/$VAGRAND_BOX_NAME
 vagrant init $VAGRAND_BOX_NAME
 ```
-
