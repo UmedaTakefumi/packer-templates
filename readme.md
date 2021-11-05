@@ -116,5 +116,7 @@ memory(RAM)         | 2048          | Memory size in MB
 * https://github.com/chef/bento
   * Access: 2021-09-03T03:00:00+09:00
   * Title: chef/bento: Packer templates for building minimal Vagrant baseboxes for multiple platforms
-
+* https://github.com/bobfraser1/packer-alpine
+  * Access: 2021-11-06T05:10:00+09:00
+  * Title: bobfraser1/packer-alpine: Packer template for alpine linux
 
