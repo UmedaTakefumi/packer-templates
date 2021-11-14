@@ -51,7 +51,20 @@ choco install virtualbox vagrant packer
 * install the homebrew: https://brew.sh
 
 ```
-brew install packer
+wget https://www.virtualbox.org/download/oracle_vbox.asc
+sudo rpm --import oracle_vbox.asc
+wget https://download.virtualbox.org/virtualbox/6.1.28/VirtualBox-6.1-6.1.28_147628_fedora33-1.x86_64.rpm
+sudo yum -y install  VirtualBox-6.1-6.1.28_147628_fedora33-1.x86_64.rpm
+sudo yum -y install kernel-devel
+sudo /sbin/vboxconfig
+
+sudo dnf install -y dnf-plugins-core
+sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
+sudo dnf -y install packer
+
+sudo dnf install -y dnf-plugins-core
+sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
+sudo dnf -y install vagrant
 ```
 
 ## Configration VirtaulBox VirtalMachine
