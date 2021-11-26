@@ -81,7 +81,7 @@ memory(RAM)         | 2048          | Memory size in MB
 | Fedora Server 35 | x86_64   | VirtualBox    | [Fedora-35-server-x86_64](fedora-35-server-x86_64) |
 | Fedora Server 34 | x86_64   | VirtualBox    | [Fedora-34-server-x86_64](fedora-34-server-x86_64) |
 | CentOS 8.2.2004  | x86_64   | VirtualBox    | [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)   |
-| CentOS 7.x       | x86_64   | VirtualBox    | [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)   |
+| CentOS 7.9       | x86_64   | VirtualBox    | [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)   |
 | CentOS 6.10      | x86_64   | VirtualBox    | [CentOS 6.10 x86_64](centos-6.10-x86_64)           |
 | CentOS 6.10      | i386     | VirtualBox    | [CentOS 6.10 i386](centos-6.10-i386)               |
 | CentOS 6.9       | x86_64   | VirtualBox    | [CentOS 6.9 x86_64](centos-6.9-x86_64)             |
