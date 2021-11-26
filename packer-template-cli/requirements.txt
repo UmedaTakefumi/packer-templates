@@ -1,4 +1,3 @@
-# pip3.9 freeze > requirements.txt
 backports.entry-points-selectable==1.1.0
 certifi==2021.10.8
 distlib==0.3.3
