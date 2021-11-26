@@ -76,38 +76,34 @@ memory(RAM)         | 2048          | Memory size in MB
 
 ## building Vagrant base boxes
 
-* Fedora Server x86_64
-  * [Fedora-35-server-x86_64](fedora-35-server-x86_64)
-  * [Fedora-34-server-x86_64](fedora-34-server-x86_64)
-* CentOS 8.x x86_64
-  * [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)
-* CentOS 7.x x86_64
-  * [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)
-* CentOS 6.x x86_64
-  * [CentOS 6.10 x86_64](centos-6.10-x86_64)
-  * [CentOS 6.9 x86_64](centos-6.9-x86_64)
-  * [CentOS 6.8 x86_64](centos-6.8-x86_64)
-  * [CentOS 6.7 x86_64](centos-6.7-x86_64)
-  * [CentOS 6.6 x86_64](centos-6.6-x86_64)
-  * [CentOS 6.5 x86_64](centos-6.5-x86_64)
-  * [CentOS 6.4 x86_64](centos-6.4-x86_64)
-  * [CentOS 6.3 x86_64](centos-6.3-x86_64)
-  * [CentOS 6.2 x86_64](centos-6.2-x86_64)
-  * [CentOS 6.1 x86_64](centos-6.1-x86_64)
-  * [CentOS 6.0 x86_64](centos-6.0-x86_64)
-* CentOS 6.x i386
-  * [CentOS 6.10 i386](centos-6.10-i386)
-  * [CentOS 6.9 i386](centos-6.9-i386)
-  * [CentOS 6.8 i386](centos-6.8-i386)
-  * [CentOS 6.7 i386](centos-6.7-i386)
-  * [CentOS 6.6 i386](centos-6.6-i386)
-  * [CentOS 6.5 i386](centos-6.5-i386)
-  * [CentOS 6.4 i386](centos-6.4-i386)
-  * [CentOS 6.3 i386](centos-6.3-i386)
-  * [CentOS 6.2 i386](centos-6.2-i386)
-  * [CentOS 6.1 i386](centos-6.1-i386)
-  * [CentOS 6.0 i386](centos-6.0-i386)
-
+| OS               | CPU-Type | Flavor |
+| ---------------- | -------- | ---------- | 
+| Fedora Server 35 | x86_64   | [Fedora-35-server-x86_64](fedora-35-server-x86_64) |
+| Fedora Server 34 | x86_64   | [Fedora-34-server-x86_64](fedora-34-server-x86_64) |
+| CentOS 8.2.2004  | x86_64   | [CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)   |
+| CentOS 7.x       | x86_64   | [CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)   |
+| CentOS 6.10      | x86_64   | [CentOS 6.10 x86_64](centos-6.10-x86_64)           |       
+| CentOS 6.10      | i386     | [CentOS 6.10 i386](centos-6.10-i386)               |
+| CentOS 6.9       | x86_64   | [CentOS 6.9 x86_64](centos-6.9-x86_64)             |
+| CentOS 6.9       | i386     | [CentOS 6.9 i386](centos-6.9-i386)                 |
+| CentOS 6.8       | x86_64   | [CentOS 6.8 x86_64](centos-6.8-x86_64)             |
+| CentOS 6.8       | i386     | [CentOS 6.8 i386](centos-6.8-i386)                 |
+| CentOS 6.7       | x86_64   | [CentOS 6.7 x86_64](centos-6.7-x86_64)             |
+| CentOS 6.7       | i386     | [CentOS 6.7 i386](centos-6.7-i386)                 |
+| CentOS 6.6       | x86_64   | [CentOS 6.6 x86_64](centos-6.6-x86_64)             |
+| CentOS 6.6       | i386     | [CentOS 6.6 i386](centos-6.6-i386)                 |
+| CentOS 6.5       | x86_64   | [CentOS 6.5 x86_64](centos-6.5-x86_64)             |
+| CentOS 6.5       | i386     | [CentOS 6.5 i386](centos-6.5-i386)                 |
+| CentOS 6.4       | x86_64   | [CentOS 6.4 x86_64](centos-6.4-x86_64)             |
+| CentOS 6.4       | i386     | [CentOS 6.4 i386](centos-6.4-i386)                 |
+| CentOS 6.3       | x86_64   | [CentOS 6.3 x86_64](centos-6.3-x86_64)             |
+| CentOS 6.3       | i386     | [CentOS 6.3 i386](centos-6.3-i386)                 |
+| CentOS 6.2       | x86_64   | [CentOS 6.2 x86_64](centos-6.2-x86_64)             |
+| CentOS 6.2       | i386     | [CentOS 6.2 i386](centos-6.2-i386)                 |
+| CentOS 6.1       | x86_64   | [CentOS 6.1 x86_64](centos-6.1-x86_64)             |
+| CentOS 6.1       | i386     | [CentOS 6.1 i386](centos-6.1-i386)                 |
+| CentOS 6.0       | x86_64   | [CentOS 6.0 x86_64](centos-6.0-x86_64)             |
+| CentOS 6.0       | i386     | [CentOS 6.0 i386](centos-6.0-i386)                 |
 
 ## Reference
 
