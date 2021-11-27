@@ -18,7 +18,7 @@ logger.propagate = False
 
 ## Todo and Task
 ##    1. git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh"])
-##    2. obj = { 'x': 'ABC', 'y': 100, 'z': [200, 300, 400] } -> import json
+##    2. conf = { 'x': 'ABC', 'y': 100, 'z': [200, 300, 400] } -> import json
 ##    3. filepath:
 ##         linux and macos -> /
 ##         windows -> \
