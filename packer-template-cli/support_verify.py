@@ -4,17 +4,13 @@ import click
 import jinja2
 import subprocess, shlex
 import os
-
-from logging import getLogger, StreamHandler, DEBUG, INFO
-LOG_LEVEL = 'DEBUG'
-FORMAT = '%(asctime)s %(levelname)s %(message)s'
-logger = getLogger(__name__)
-handler = StreamHandler()
-handler.setLevel(LOG_LEVEL)
-logger.setLevel(LOG_LEVEL)
-logger.addHandler(handler)
-logger.propagate = False
-#logger.basicConfig(format=FORMAT)
+import logging
+LOG_LEVEL = 'info'
+if LOG_LEVEL == 'debug':
+  FORMATTER = '%(asctime)s %(levelname)s %(module)s %(funcName)s %(message)s'
+  logging.basicConfig(level=logging.DEBUG, format=FORMATTER)
+elif LOG_LEVEL == 'info':
+  logging.basicConfig(level=logging.INFO)
 
 ## Todo and Task
 ##    1. git ls-files | sort | awk -F/ '{print $1}' | uniq | grep -v .git | grep -v .md | grep -v .sh"])
@@ -46,9 +42,9 @@ def bulkbuild_vagrant_boxes():
 def check_status_todolist():
   click.echo(print_header())
   
-  logger.debug('%s' % os.getcwd())
+  logging.debug('%s' % os.getcwd())
   os.chdir('../')
-  logger.debug(' %s' % os.getcwd())
+  logging.debug('%s' % os.getcwd())
 
   flavor_dir = []
 
@@ -64,9 +60,9 @@ def check_status_todolist():
 
   for str_temp in cmd_stdout:
     if str_slash in str_temp and str_exempt not in str_temp:
-      logger.debug('%s' % str_temp)
+      logging.debug('%s' % str_temp)
       idx = str_temp.find(str_slash)
-      logger.debug(str_temp[:idx])
+      logging.debug(str_temp[:idx])
       flavor_dir.append(str_temp[:idx])
   
   print(set(flavor_dir))
