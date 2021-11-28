@@ -28,14 +28,14 @@ def build_flavor_dir():
 
   flavor_dir = []
 
-  ## atode: no-shell
+  ## ToDoTask: no-shell
   cmd = 'git ls-files'
   output_stdout = []
   sub = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
   cmd_stdout = sub.stdout.read().splitlines()
 
-  ## atode... -> json
-  str_slash = '/'
+  ## ToDoTask: -> json
+  str_slash = '/'  ## ToDoTask: rename
   str_exempt = 'packer-template-cli'
 
   for str_temp in cmd_stdout:
