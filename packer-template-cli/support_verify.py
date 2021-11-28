@@ -35,15 +35,15 @@ def build_flavor_dir():
   cmd_stdout = sub.stdout.read().splitlines()
 
   ## ToDoTask: -> json
-  str_slash = '/'  ## ToDoTask: rename
+  str_filepath_separator = '/'  ## ToDoTask: rename
   str_exempt = 'packer-template-cli'
 
   for str_temp in cmd_stdout:
 
-    if str_slash in str_temp and str_exempt not in str_temp:
+    if str_filepath_separator in str_temp and str_exempt not in str_temp:
 
       logging.debug('%s' % str_temp)      
-      idx = str_temp.find(str_slash)      
+      idx = str_temp.find(str_filepath_separator)      
       logging.debug(str_temp[:idx])
       flavor_dir.append(str_temp[:idx])
   
