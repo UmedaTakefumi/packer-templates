@@ -35,7 +35,7 @@ def build_flavor_dir():
   cmd_stdout = sub.stdout.read().splitlines()
 
   ## ToDoTask: -> json
-  str_filepath_separator = '/'  ## ToDoTask: rename
+  str_filepath_separator = '/'
   str_exempt = 'packer-template-cli'
 
   for str_temp in cmd_stdout:
