@@ -20,6 +20,36 @@ elif LOG_LEVEL == 'info':
 ##         windows -> \
 
 ## 
+def build_flavor_dir():
+
+  logging.debug('%s' % os.getcwd())
+  os.chdir('../')
+  logging.debug('%s' % os.getcwd())
+
+  flavor_dir = []
+
+  ## atode: no-shell
+  cmd = 'git ls-files'
+  output_stdout = []
+  sub = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+  cmd_stdout = sub.stdout.read().splitlines()
+
+  ## atode... -> json
+  str_slash = '/'
+  str_exempt = 'packer-template-cli'
+
+  for str_temp in cmd_stdout:
+
+    if str_slash in str_temp and str_exempt not in str_temp:
+
+      logging.debug('%s' % str_temp)      
+      idx = str_temp.find(str_slash)      
+      logging.debug(str_temp[:idx])
+      flavor_dir.append(str_temp[:idx])
+  
+  return set(flavor_dir)
+
+## 
 def print_header():
   print("# Building Vagrant base boxes")
 
@@ -41,32 +71,9 @@ def bulkbuild_vagrant_boxes():
 @cli.command(help='Check your current progress and create a todo list.')
 def check_status_todolist():
   click.echo(print_header())
+
+  print(build_flavor_dir())
   
-  logging.debug('%s' % os.getcwd())
-  os.chdir('../')
-  logging.debug('%s' % os.getcwd())
-
-  flavor_dir = []
-
-  ## atode: no-shell
-  cmd = 'git ls-files'
-  output_stdout = []
-  sub = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
-  cmd_stdout = sub.stdout.read().splitlines()
-
-  ## atode... -> json
-  str_slash = '/'
-  str_exempt = 'packer-template-cli'
-
-  for str_temp in cmd_stdout:
-    if str_slash in str_temp and str_exempt not in str_temp:
-      logging.debug('%s' % str_temp)
-      idx = str_temp.find(str_slash)
-      logging.debug(str_temp[:idx])
-      flavor_dir.append(str_temp[:idx])
-  
-  print(set(flavor_dir))
-
 ## 
 @cli.command(help='Delete all vagrant boxes related items at once.')
 def bulk_delete_vagrant_boxes():
