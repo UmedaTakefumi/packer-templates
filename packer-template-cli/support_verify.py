@@ -35,17 +35,25 @@ def build_flavor_dir():
   sub = subprocess.Popen(shlex.split(cmd_git_lsfiles), stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
   result_git_ls = sub.stdout.read().splitlines()
 
-  ## ToDoTask: -> json
   filepath_separator = '/'
   dirname_exempt = 'packer-template-cli'
 
   for git_ls_temp in result_git_ls:
 
+    ## stringに / が含まれているかを確認し、トップディレクトリのみの配列を作成する. 
+    ## ただし特定のディレクトリ名(dirname_exempt)は、除外する.
+    ## 
+    ## DeepL: https://www.deepl.com/translator I'm not good at English.
+    ##   Check if the string contains /, and create an array of top directories only.
+    ##   However, certain directory names (dirname_exempt) are excluded.
     if filepath_separator in git_ls_temp and dirname_exempt not in git_ls_temp:
 
       logging.debug('%s' % git_ls_temp)
-      idx = git_ls_temp.find(filepath_separator)      
+
+      ## ref(11/29/2021): https://atmarkit.itmedia.co.jp/ait/articles/2103/23/news022.html
+      idx = git_ls_temp.find(filepath_separator)
       logging.debug(git_ls_temp[:idx])
+
       flavor_dir.append(git_ls_temp[:idx])
   
   return set(flavor_dir)
