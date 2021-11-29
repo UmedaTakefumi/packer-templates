@@ -40,7 +40,7 @@ def build_flavor_dir():
 
   for git_ls_temp in result_git_ls:
 
-    ## stringに / が含まれているかを確認し、トップディレクトリのみの配列を作成する. 
+    ## stringに '/'(filepath_separator) が含まれているかを確認し、トップディレクトリのみの配列を作成する. 
     ## ただし特定のディレクトリ名(dirname_exempt)は、除外する.
     ## 
     ## DeepL: https://www.deepl.com/translator I'm not good at English.
