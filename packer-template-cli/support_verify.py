@@ -50,7 +50,7 @@ def build_flavor_dir():
 
       logging.debug('%s' % git_ls_temp)
 
-      ## ref(11/29/2021): https://atmarkit.itmedia.co.jp/ait/articles/2103/23/news022.html
+      ## ref(access 11/29/2021): https://atmarkit.itmedia.co.jp/ait/articles/2103/23/news022.html
       idx = git_ls_temp.find(filepath_separator)
       logging.debug(git_ls_temp[:idx])
 
