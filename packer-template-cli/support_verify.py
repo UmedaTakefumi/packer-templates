@@ -5,6 +5,7 @@ import jinja2
 import subprocess, shlex
 import os
 import logging
+## ToDo and Task: __init__.py
 LOG_LEVEL = 'info'
 if LOG_LEVEL == 'debug':
   FORMATTER = '%(asctime)s %(levelname)s %(module)s %(funcName)s %(message)s'
@@ -29,23 +30,23 @@ def build_flavor_dir():
   flavor_dir = []
 
   ## ToDoTask: no-shell
-  cmd = 'git ls-files'
+  cmd_git_lsfiles = 'git ls-files'
   output_stdout = []
-  sub = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
-  cmd_stdout = sub.stdout.read().splitlines()
+  sub = subprocess.Popen(shlex.split(cmd_git_lsfiles), stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+  result_git_ls = sub.stdout.read().splitlines()
 
   ## ToDoTask: -> json
-  str_filepath_separator = '/'
-  str_dirname_exempt = 'packer-template-cli'
+  filepath_separator = '/'
+  dirname_exempt = 'packer-template-cli'
 
-  for str_temp in cmd_stdout:
+  for git_ls_temp in result_git_ls:
 
-    if str_filepath_separator in str_temp and str_dirname_exempt not in str_temp:
+    if filepath_separator in git_ls_temp and dirname_exempt not in git_ls_temp:
 
-      logging.debug('%s' % str_temp)      
-      idx = str_temp.find(str_filepath_separator)      
-      logging.debug(str_temp[:idx])
-      flavor_dir.append(str_temp[:idx])
+      logging.debug('%s' % git_ls_temp)
+      idx = git_ls_temp.find(filepath_separator)      
+      logging.debug(git_ls_temp[:idx])
+      flavor_dir.append(git_ls_temp[:idx])
   
   return set(flavor_dir)
 
