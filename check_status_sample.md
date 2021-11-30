@@ -1,5 +1,11 @@
 # Building Vagrant base boxes
 
+## CPU / sysctl machdep.cpu.brand_string
+
+```
+machdep.cpu.brand_string: Intel(R) Core(TM) i7-7660U CPU @ 2.50GHz
+```
+
 | index | Flavor | Builders | buildbox | import box | mkdir directory | vagrant init | problem |
 | ----- | ------ | -------- | -------- | -----------| --------------- | -------------| ------- |
 | [1](centos-6.2-x86_64/build.txt) | [centos-6.2-x86_64](centos-6.2-x86_64) | virtualbox-iso | ✅  [OK] | ✅ [OK]| ✅ [OK] | ✅ [OK]| |
