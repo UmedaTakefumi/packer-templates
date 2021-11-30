@@ -1,5 +1,13 @@
 # Building Vagrant base boxes
 
+## OS / sw_vers
+
+```
+ProductName:	macOS
+ProductVersion:	11.6
+BuildVersion:	20G165
+```
+
 ## CPU / sysctl machdep.cpu.brand_string
 
 ```
