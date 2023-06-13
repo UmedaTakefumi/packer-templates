@@ -36,12 +36,14 @@ Packer template for Vagrant base boxes
 brew install virtualbox virtualbox-extension-pack vagrant packer
 ```
 
-### Windows10 Pro + Chocolatey + VirtaulBox
+### Windows11 Pro + WinGet Client(Windows Package Manager) + VirtaulBox
 
-* install the Chocolatey: https://chocolatey.org
+* install the WinGet Client: https://github.com/microsoft/winget-cli
 
 ```
-choco install virtualbox vagrant packer
+winget install virtualbox
+winget install vagrant
+winget install packer
 ```
 
 ### Fedora 34 + homebrew + VirtualBox(no-homebrew)
