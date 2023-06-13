@@ -46,10 +46,6 @@ winget install Hashicorp.Vagrant
 winget install Hashicorp.Packer
 ```
 
-* https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/VirtualBox
-* https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Vagrant
-* https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Packer
-
 ### Fedora 34 + homebrew + VirtualBox(no-homebrew)
 
 * install the VirtualBox: https://www.virtualbox.org/wiki/Downloads
@@ -134,4 +130,15 @@ memory(RAM)         | 2048          | Memory size in MB
 * https://github.com/bobfraser1/packer-alpine
   * Access: 2021-11-06T05:10:00+09:00
   * Title: bobfraser1/packer-alpine: Packer template for alpine linux
+* https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/VirtualBox
+  * Access: 2023-06-14T05:23:00+09:00
+  * Title: winget-pkgs/manifests/o/Oracle/VirtualBox at master · microsoft/winget-pkgs
+* https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Vagrant
+  * Access: 2023-06-14T05:23:00+09:00
+  * Title: winget-pkgs/manifests/h/Hashicorp/Vagrant at master · microsoft/winget-pkgs
+* https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Packer
+  * Access: 2023-06-14T05:23:00+09:00
+  * Title: winget-pkgs/manifests/h/Hashicorp/Packer at master · microsoft/winget-pkgs
+
+
 
