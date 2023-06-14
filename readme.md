@@ -14,7 +14,8 @@ Packer template for Vagrant base boxes
       * [Ubuntu official Image](https://hub.docker.com/_/ubuntu)
   * [Minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
   * [kubernets](https://kubernetes.io)
-
+* Normal-Users
+  * [Vagrant Cloud](https://app.vagrantup.com/boxes/search)
 * Usage scene
   * Definition here high-layer-application is no-build-kernel-work, no-network-simulation-work.
 
