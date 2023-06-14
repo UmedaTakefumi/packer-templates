@@ -21,7 +21,7 @@ Packer template for Vagrant base boxes
 ## Requirements software
 
 * [macOS BigSur + homebrew + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#macos-bigsur--homebrew--virtualbox)
-* [Windows10 Pro + Chocolatey + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#windows10-pro--chocolatey--virtaulbox)
+* [Windows11 Pro + WinGet Client(Windows Package Manager) + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#windows11-pro--winget-clientwindows-package-manager--virtaulbox)
 * [Fedora 34 + homebrew + VirtualBox(no-homebrew)](https://github.com/UmedaTakefumi/packer-templates#fedora-34--homebrew--virtualboxno-homebrew)
 
 
