@@ -14,14 +14,15 @@ Packer template for Vagrant base boxes
       * [Ubuntu official Image](https://hub.docker.com/_/ubuntu)
   * [Minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
   * [kubernets](https://kubernetes.io)
-
+* Normal-Users
+  * [Vagrant Cloud](https://app.vagrantup.com/boxes/search)
 * Usage scene
   * Definition here high-layer-application is no-build-kernel-work, no-network-simulation-work.
 
 ## Requirements software
 
 * [macOS BigSur + homebrew + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#macos-bigsur--homebrew--virtualbox)
-* [Windows10 Pro + Chocolatey + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#windows10-pro--chocolatey--virtaulbox)
+* [Windows11 Pro + WinGet Client(Windows Package Manager) + VirtualBox](https://github.com/UmedaTakefumi/packer-templates#windows11-pro--winget-clientwindows-package-manager--virtaulbox)
 * [Fedora 34 + homebrew + VirtualBox(no-homebrew)](https://github.com/UmedaTakefumi/packer-templates#fedora-34--homebrew--virtualboxno-homebrew)
 
 
@@ -36,12 +37,14 @@ Packer template for Vagrant base boxes
 brew install virtualbox virtualbox-extension-pack vagrant packer
 ```
 
-### Windows10 Pro + Chocolatey + VirtaulBox
+### Windows11 Pro + WinGet Client(Windows Package Manager) + VirtaulBox
 
-* install the Chocolatey: https://chocolatey.org
+* install the WinGet Client: https://github.com/microsoft/winget-cli
 
 ```
-choco install virtualbox vagrant packer
+winget install Oracle.VirtualBox
+winget install Hashicorp.Vagrant
+winget install Hashicorp.Packer
 ```
 
 ### Fedora 34 + homebrew + VirtualBox(no-homebrew)
@@ -128,4 +131,15 @@ memory(RAM)         | 2048          | Memory size in MB
 * https://github.com/bobfraser1/packer-alpine
   * Access: 2021-11-06T05:10:00+09:00
   * Title: bobfraser1/packer-alpine: Packer template for alpine linux
+* https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Oracle/VirtualBox
+  * Access: 2023-06-14T05:23:00+09:00
+  * Title: winget-pkgs/manifests/o/Oracle/VirtualBox at master · microsoft/winget-pkgs
+* https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Vagrant
+  * Access: 2023-06-14T05:23:00+09:00
+  * Title: winget-pkgs/manifests/h/Hashicorp/Vagrant at master · microsoft/winget-pkgs
+* https://github.com/microsoft/winget-pkgs/tree/master/manifests/h/Hashicorp/Packer
+  * Access: 2023-06-14T05:23:00+09:00
+  * Title: winget-pkgs/manifests/h/Hashicorp/Packer at master · microsoft/winget-pkgs
+
+
 
