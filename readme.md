@@ -81,32 +81,32 @@ memory(RAM)         | 2048          | Memory size in MB
 
 | OS               | CPU-Type | Builders-Type | Flavor                                             |
 | ---------------- | -------- | ------------- | -------------------------------------------------- |
-| Fedora Server 35 | x86_64   | VirtualBox    | [flavor/Fedora-35-server-x86_64](fedora-35-server-x86_64) |
-| Fedora Server 34 | x86_64   | VirtualBox    | [flavor/Fedora-34-server-x86_64](fedora-34-server-x86_64) |
-| CentOS 8.2.2004  | x86_64   | VirtualBox    | [flavor/CentOS 8.2.2004 x86_64](centos-8.2.2004-x86_64)   |
-| CentOS 7.9       | x86_64   | VirtualBox    | [flavor/CentOS 7.9.2009 x86_64](centos-7.9.2009-x86_64)   |
-| CentOS 6.10      | x86_64   | VirtualBox    | [flavor/CentOS 6.10 x86_64](centos-6.10-x86_64)           |
-| CentOS 6.10      | i386     | VirtualBox    | [flavor/CentOS 6.10 i386](centos-6.10-i386)               |
-| CentOS 6.9       | x86_64   | VirtualBox    | [flavor/CentOS 6.9 x86_64](centos-6.9-x86_64)             |
-| CentOS 6.9       | i386     | VirtualBox    | [flavor/CentOS 6.9 i386](centos-6.9-i386)                 |
-| CentOS 6.8       | x86_64   | VirtualBox    | [flavor/CentOS 6.8 x86_64](centos-6.8-x86_64)             |
-| CentOS 6.8       | i386     | VirtualBox    | [flavor/CentOS 6.8 i386](centos-6.8-i386)                 |
-| CentOS 6.7       | x86_64   | VirtualBox    | [flavor/CentOS 6.7 x86_64](centos-6.7-x86_64)             |
-| CentOS 6.7       | i386     | VirtualBox    | [flavor/CentOS 6.7 i386](centos-6.7-i386)                 |
-| CentOS 6.6       | x86_64   | VirtualBox    | [flavor/CentOS 6.6 x86_64](centos-6.6-x86_64)             |
-| CentOS 6.6       | i386     | VirtualBox    | [flavor/CentOS 6.6 i386](centos-6.6-i386)                 |
-| CentOS 6.5       | x86_64   | VirtualBox    | [flavor/CentOS 6.5 x86_64](centos-6.5-x86_64)             |
-| CentOS 6.5       | i386     | VirtualBox    | [flavor/CentOS 6.5 i386](centos-6.5-i386)                 |
-| CentOS 6.4       | x86_64   | VirtualBox    | [flavor/CentOS 6.4 x86_64](centos-6.4-x86_64)             |
-| CentOS 6.4       | i386     | VirtualBox    | [flavor/CentOS 6.4 i386](centos-6.4-i386)                 |
-| CentOS 6.3       | x86_64   | VirtualBox    | [flavor/CentOS 6.3 x86_64](centos-6.3-x86_64)             |
-| CentOS 6.3       | i386     | VirtualBox    | [flavor/CentOS 6.3 i386](centos-6.3-i386)                 |
-| CentOS 6.2       | x86_64   | VirtualBox    | [flavor/CentOS 6.2 x86_64](centos-6.2-x86_64)             |
-| CentOS 6.2       | i386     | VirtualBox    | [flavor/CentOS 6.2 i386](centos-6.2-i386)                 |
-| CentOS 6.1       | x86_64   | VirtualBox    | [flavor/CentOS 6.1 x86_64](centos-6.1-x86_64)             |
-| CentOS 6.1       | i386     | VirtualBox    | [flavor/CentOS 6.1 i386](centos-6.1-i386)                 |
-| CentOS 6.0       | x86_64   | VirtualBox    | [flavor/CentOS 6.0 x86_64](centos-6.0-x86_64)             |
-| CentOS 6.0       | i386     | VirtualBox    | [flavor/CentOS 6.0 i386](centos-6.0-i386)                 |
+| Fedora Server 35 | x86_64   | VirtualBox    | [Fedora-35-server-x86_64](flavor/fedora-35-server-x86_64) |
+| Fedora Server 34 | x86_64   | VirtualBox    | [Fedora-34-server-x86_64](flavor/fedora-34-server-x86_64) |
+| CentOS 8.2.2004  | x86_64   | VirtualBox    | [CentOS 8.2.2004 x86_64](flavor/centos-8.2.2004-x86_64)   |
+| CentOS 7.9       | x86_64   | VirtualBox    | [CentOS 7.9.2009 x86_64](flavor/centos-7.9.2009-x86_64)   |
+| CentOS 6.10      | x86_64   | VirtualBox    | [CentOS 6.10 x86_64](flavor/centos-6.10-x86_64)           |
+| CentOS 6.10      | i386     | VirtualBox    | [CentOS 6.10 i386](flavor/centos-6.10-i386)               |
+| CentOS 6.9       | x86_64   | VirtualBox    | [CentOS 6.9 x86_64](flavor/centos-6.9-x86_64)             |
+| CentOS 6.9       | i386     | VirtualBox    | [CentOS 6.9 i386](flavor/centos-6.9-i386)                 |
+| CentOS 6.8       | x86_64   | VirtualBox    | [CentOS 6.8 x86_64](flavor/centos-6.8-x86_64)             |
+| CentOS 6.8       | i386     | VirtualBox    | [CentOS 6.8 i386](flavor/centos-6.8-i386)                 |
+| CentOS 6.7       | x86_64   | VirtualBox    | [CentOS 6.7 x86_64](flavor/centos-6.7-x86_64)             |
+| CentOS 6.7       | i386     | VirtualBox    | [CentOS 6.7 i386](flavor/centos-6.7-i386)                 |
+| CentOS 6.6       | x86_64   | VirtualBox    | [CentOS 6.6 x86_64](flavor/centos-6.6-x86_64)             |
+| CentOS 6.6       | i386     | VirtualBox    | [CentOS 6.6 i386](flavor/centos-6.6-i386)                 |
+| CentOS 6.5       | x86_64   | VirtualBox    | [CentOS 6.5 x86_64](flavor/centos-6.5-x86_64)             |
+| CentOS 6.5       | i386     | VirtualBox    | [CentOS 6.5 i386](flavor/centos-6.5-i386)                 |
+| CentOS 6.4       | x86_64   | VirtualBox    | [CentOS 6.4 x86_64](flavor/centos-6.4-x86_64)             |
+| CentOS 6.4       | i386     | VirtualBox    | [CentOS 6.4 i386](flavor/centos-6.4-i386)                 |
+| CentOS 6.3       | x86_64   | VirtualBox    | [CentOS 6.3 x86_64](flavor/centos-6.3-x86_64)             |
+| CentOS 6.3       | i386     | VirtualBox    | [CentOS 6.3 i386](flavor/centos-6.3-i386)                 |
+| CentOS 6.2       | x86_64   | VirtualBox    | [CentOS 6.2 x86_64](flavor/centos-6.2-x86_64)             |
+| CentOS 6.2       | i386     | VirtualBox    | [CentOS 6.2 i386](flavor/centos-6.2-i386)                 |
+| CentOS 6.1       | x86_64   | VirtualBox    | [CentOS 6.1 x86_64](flavor/centos-6.1-x86_64)             |
+| CentOS 6.1       | i386     | VirtualBox    | [CentOS 6.1 i386](flavor/centos-6.1-i386)                 |
+| CentOS 6.0       | x86_64   | VirtualBox    | [CentOS 6.0 x86_64](flavor/centos-6.0-x86_64)             |
+| CentOS 6.0       | i386     | VirtualBox    | [CentOS 6.0 i386](flavor/centos-6.0-i386)                 |
 
 ## Reference
 
