@@ -141,5 +141,26 @@ memory(RAM)         | 2048          | Memory size in MB
   * Access: 2023-06-14T05:23:00+09:00
   * Title: winget-pkgs/manifests/h/Hashicorp/Packer at master · microsoft/winget-pkgs
 
+## LICENSE
 
-
+* https://github.com/shiguredo/packer-templates
+  * Access: 2023-06-26T12:00:00+09:00
+  * Apache License 2.0
+* https://github.com/kaorimatz/packer-templates
+  * Access: 2023-06-26T12:00:00+09:00
+  * MIT License
+* https://github.com/hashicorp/packer
+  * Access: 2023-06-26T12:00:00+09:00
+  * Mozilla Public License 2.0
+* https://github.com/joefitzgerald/packer-windows
+  * Access: 2023-06-26T12:00:00+09:00
+  * MIT License
+* https://github.com/chef/bento
+  * Access: 2023-06-26T12:00:00+09:00
+  * Apache License 2.0
+* https://github.com/bobfraser1/packer-alpine    
+  * Access: 2023-06-26T12:00:00+09:00
+  * Apache License 2.0
+* https://github.com/microsoft/winget-pkgs/tree/master
+  * Access: 2023-06-26T12:00:00+09:00
+  * Apache License 2.0
