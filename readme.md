@@ -16,8 +16,12 @@ Packer template for Vagrant base boxes
   * [kubernets](https://kubernetes.io)
 * Normal-Users
   * [Vagrant Cloud](https://app.vagrantup.com/boxes/search)
+* no-fake build-kernel-work and no-fake network-simulation-work
+  * physical device 
 * Usage scene
-  * Definition here high-layer-application is build-kernel-work, network-simulation-work.
+  * Virtual testing.
+  * simplified build-kernel-work and simplified network-simulation-work.
+
 
 ## Requirements software
 
