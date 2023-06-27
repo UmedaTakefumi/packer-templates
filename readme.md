@@ -17,7 +17,7 @@ Packer template for Vagrant base boxes
 * Normal-Users
   * [Vagrant Cloud](https://app.vagrantup.com/boxes/search)
 * Usage scene
-  * Definition here high-layer-application is no-build-kernel-work, no-network-simulation-work.
+  * Definition here high-layer-application is build-kernel-work, network-simulation-work.
 
 ## Requirements software
 
