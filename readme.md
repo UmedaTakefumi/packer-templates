@@ -4,7 +4,7 @@
 
 ## Description
 
-Packer template for Vagrant base boxes
+Packer template for Vagrant base boxes for myself.
 
 * Click here for high-layer-application testing:
   * [docker docs](https://docs.docker.com)
