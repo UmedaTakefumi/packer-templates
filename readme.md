@@ -16,7 +16,7 @@ Packer template for Vagrant base boxes for myself.
   * [kubernets](https://kubernetes.io)
 * Normal-Users
   * [Vagrant Cloud](https://app.vagrantup.com/boxes/search)
-* no-fake build-kernel-work and no-fake network-simulation-work
+* no-fake rebuild-kernel-work and no-fake network-simulation-work
   * physical device 
 * Usage scene
   * Virtual testing.
