@@ -87,7 +87,7 @@ function bulkbuild_vagrant_boxes () {
     echo "Set the PACKER_TEMPLATE_BASEDIR."
     echo ""
     echo "example:"
-    echo "  export PACKER_TEMPLATE_BASEDIR=$HOME/Temp/packer-templates"
+    echo "  export PACKER_TEMPLATE_BASEDIR=$(pwd)"
     echo ""
     
     exit 1
