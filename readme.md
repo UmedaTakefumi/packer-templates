@@ -20,7 +20,7 @@ Packer template for Vagrant base boxes for myself.
   * physical device 
 * Usage scene
   * Virtual testing.
-  * simplified build-kernel-work and simplified network-simulation-work.
+  * simplified rebuild-kernel-work and simplified network-simulation-work.
   * workflow testing.
 
 ## Requirements software
