@@ -46,9 +46,9 @@ brew install virtualbox virtualbox-extension-pack vagrant packer
 * install the WinGet Client: https://github.com/microsoft/winget-cli
 
 ```
-winget install Oracle.VirtualBox
-winget install Hashicorp.Vagrant
-winget install Hashicorp.Packer
+choco install -y virtualbox virtualbox-guest-additions-guest.install
+choco install -y vagrant
+choco install -y packer
 ```
 
 ### Fedora 34 + homebrew + VirtualBox(no-homebrew)
