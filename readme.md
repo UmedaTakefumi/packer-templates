@@ -41,7 +41,7 @@ Packer template for Vagrant base boxes for myself.
 brew install virtualbox virtualbox-extension-pack vagrant packer
 ```
 
-### Windows11 Pro + Chocolatey (The Largest Repository of Windows Packages) + VirtaulBox
+### Windows11 Pro + Chocolatey + VirtaulBox
 
 * install the WinGet Client: https://github.com/microsoft/winget-cli
 
