@@ -43,7 +43,7 @@ brew install virtualbox virtualbox-extension-pack vagrant packer
 
 ### Windows11 Pro + Chocolatey + VirtaulBox
 
-* install the WinGet Client: https://github.com/microsoft/winget-cli
+* install the Chocolatey: https://chocolatey.org/install
 
 ```
 choco install -y virtualbox virtualbox-guest-additions-guest.install
